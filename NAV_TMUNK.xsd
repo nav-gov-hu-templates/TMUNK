@@ -1,0 +1,4532 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        xmlns:common="https://soap.api.nav.gov.hu/definitions/model/2.0/common/1.0"
+        xmlns:enm1="https://soap.api.nav.gov.hu/definitions/model/2.0/altalanos_iranyitoszam"
+        xmlns:meta="https://api.nav.gov.hu/definitions/form_xsd_metaschema/1.0"
+        xmlns:tns="https://soap.api.nav.gov.hu/definitions/model/2.0/TMUNK/2.0"
+        xmlns:xs="http://www.w3.org/2001/XMLSchema"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        targetNamespace="https://soap.api.nav.gov.hu/definitions/model/2.0/TMUNK/2.0">
+   <import namespace="https://api.nav.gov.hu/definitions/form_xsd_metaschema/1.0"
+           schemaLocation="form_xsd_metaschema.xsd"/>
+   <import namespace="https://soap.api.nav.gov.hu/definitions/model/2.0/common/1.0"
+           schemaLocation="common.xsd"/>
+   <import namespace="https://soap.api.nav.gov.hu/definitions/model/2.0/altalanos_iranyitoszam"
+           schemaLocation="altalanos_iranyitoszam.xsd"/>
+   <element name="Doc_TMUNK"
+            type="tns:Doc_TMUNK_Type"
+            meta:metaType="DocMetaType">
+      <annotation>
+         <documentation>Bejelentő és változásbejelentő lap a munkaerő-kölcsönzésre vonatkozó adatokról a munkavállalót kölcsönvevő, foglalkoztató adózó részére történő bejelentéshez</documentation>
+      </annotation>
+      <xs:unique name="uniqueFileId_Attachment_1">
+         <xs:selector xpath="Form_TMUNK/Attachment_1"/>
+         <xs:field xpath="fileId"/>
+      </xs:unique>
+   </element>
+   <simpleType name="Enum_TMUNK_0A0001E007A">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="1 - Adóazonosító jel megadásával kívánok munkavállalót bejelenteni"/>
+         <enumeration value="2 - Természetes személyazonosító adatok megadásával kívánok munkavállalót bejelenteni"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_TMUNK_0BXXXXC0001AA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="U"/>
+         <enumeration value="V"/>
+         <enumeration value="T"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_TMUNK_0BXXXXC0002AA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="U"/>
+         <enumeration value="V"/>
+         <enumeration value="T"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_TMUNK_0BXXXXC0003AA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="U"/>
+         <enumeration value="V"/>
+         <enumeration value="T"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_TMUNK_0BXXXXC0004AA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="U"/>
+         <enumeration value="V"/>
+         <enumeration value="T"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_TMUNK_0BXXXXC0005AA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="U"/>
+         <enumeration value="V"/>
+         <enumeration value="T"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_TMUNK_0BXXXXC0006AA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="U"/>
+         <enumeration value="V"/>
+         <enumeration value="T"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_TMUNK_0BXXXXC0007AA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="U"/>
+         <enumeration value="V"/>
+         <enumeration value="T"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_TMUNK_0BXXXXC0008AA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="U"/>
+         <enumeration value="V"/>
+         <enumeration value="T"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_TMUNK_0BXXXXC0009AA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="U"/>
+         <enumeration value="V"/>
+         <enumeration value="T"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_TMUNK_0BXXXXC0010AA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="U"/>
+         <enumeration value="V"/>
+         <enumeration value="T"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_TMUNK_0BXXXXC0011AA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="U"/>
+         <enumeration value="V"/>
+         <enumeration value="T"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_TMUNK_0BXXXXC0012AA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="U"/>
+         <enumeration value="V"/>
+         <enumeration value="T"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_TMUNK_0BXXXXC0013AA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="U"/>
+         <enumeration value="V"/>
+         <enumeration value="T"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_TMUNK_0BXXXXC0014AA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="U"/>
+         <enumeration value="V"/>
+         <enumeration value="T"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_TMUNK_0BXXXXC0015AA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="U"/>
+         <enumeration value="V"/>
+         <enumeration value="T"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_TMUNK_0BXXXXC0016AA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="U"/>
+         <enumeration value="V"/>
+         <enumeration value="T"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_TMUNK_0BXXXXC0017AA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="U"/>
+         <enumeration value="V"/>
+         <enumeration value="T"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_TMUNK_0BXXXXC0018AA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="U"/>
+         <enumeration value="V"/>
+         <enumeration value="T"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_TMUNK_0BXXXXC0019AA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="U"/>
+         <enumeration value="V"/>
+         <enumeration value="T"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_TMUNK_0BXXXXC0020AA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="U"/>
+         <enumeration value="V"/>
+         <enumeration value="T"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_TMUNK_0CXXXXC003A">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="U"/>
+      </restriction>
+   </simpleType>
+   <complexType name="Doc_TMUNK_Type">
+      <annotation>
+         <documentation>A teljes bizonylat szerkezetet leíró típus</documentation>
+      </annotation>
+      <sequence>
+         <element name="Form_TMUNK"
+                  type="tns:Form_TMUNK_Type"
+                  minOccurs="1"
+                  maxOccurs="1"
+                  meta:metaType="FormMetaType">
+            <annotation>
+               <documentation>TMUNK részbizonylat</documentation>
+            </annotation>
+         </element>
+      </sequence>
+   </complexType>
+   <simpleType name="Enum_TMUNK_egyseges_kozterulet_jelleg_levelezes_1">
+      <annotation>
+         <documentation>Enum értékek egyseges_kozterulet_jelleg_levelezes mátrix 1. oszlopból.</documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="út"/>
+         <enumeration value="utca"/>
+         <enumeration value="tér"/>
+         <enumeration value="köz"/>
+         <enumeration value="akna"/>
+         <enumeration value="akna-alsó"/>
+         <enumeration value="akna-felső"/>
+         <enumeration value="alagút"/>
+         <enumeration value="alsórakpart"/>
+         <enumeration value="arborétum"/>
+         <enumeration value="autóút"/>
+         <enumeration value="állat és növ.kert"/>
+         <enumeration value="állomás"/>
+         <enumeration value="árnyék"/>
+         <enumeration value="árok"/>
+         <enumeration value="átjáró"/>
+         <enumeration value="barakképület"/>
+         <enumeration value="barlang"/>
+         <enumeration value="bánya"/>
+         <enumeration value="bányatelep"/>
+         <enumeration value="bástya"/>
+         <enumeration value="bástyája"/>
+         <enumeration value="bejáró"/>
+         <enumeration value="bekötőút"/>
+         <enumeration value="csárda"/>
+         <enumeration value="csónakházak"/>
+         <enumeration value="domb"/>
+         <enumeration value="dűlő"/>
+         <enumeration value="dűlősor"/>
+         <enumeration value="dűlőterület"/>
+         <enumeration value="dűlőút"/>
+         <enumeration value="egyetemváros"/>
+         <enumeration value="egyéb"/>
+         <enumeration value="elágazás"/>
+         <enumeration value="emlékút"/>
+         <enumeration value="erdészház"/>
+         <enumeration value="erdészlak"/>
+         <enumeration value="erdő"/>
+         <enumeration value="erdősor"/>
+         <enumeration value="fasor"/>
+         <enumeration value="fasora"/>
+         <enumeration value="felső"/>
+         <enumeration value="forduló"/>
+         <enumeration value="föld"/>
+         <enumeration value="főmérnökség"/>
+         <enumeration value="főtér"/>
+         <enumeration value="főút"/>
+         <enumeration value="gát"/>
+         <enumeration value="gátőrház"/>
+         <enumeration value="gátsor"/>
+         <enumeration value="gyár"/>
+         <enumeration value="gyártelep"/>
+         <enumeration value="gyárváros"/>
+         <enumeration value="gyümölcsös"/>
+         <enumeration value="határsor"/>
+         <enumeration value="határút"/>
+         <enumeration value="ház"/>
+         <enumeration value="hegy"/>
+         <enumeration value="hegyhát"/>
+         <enumeration value="hegyhát dűlő"/>
+         <enumeration value="hegyhát köz"/>
+         <enumeration value="hídfő"/>
+         <enumeration value="hrsz."/>
+         <enumeration value="iskola"/>
+         <enumeration value="játszótér"/>
+         <enumeration value="kapu"/>
+         <enumeration value="kastély"/>
+         <enumeration value="kert"/>
+         <enumeration value="kertsor"/>
+         <enumeration value="kilátó"/>
+         <enumeration value="kioszk"/>
+         <enumeration value="kocsiszín"/>
+         <enumeration value="kolónia"/>
+         <enumeration value="korzó"/>
+         <enumeration value="kör"/>
+         <enumeration value="körönd"/>
+         <enumeration value="körtér"/>
+         <enumeration value="körút"/>
+         <enumeration value="körvasútsor"/>
+         <enumeration value="körzet"/>
+         <enumeration value="kultúrpark"/>
+         <enumeration value="kunyhó"/>
+         <enumeration value="kút"/>
+         <enumeration value="kültelek"/>
+         <enumeration value="külterület"/>
+         <enumeration value="lakóház"/>
+         <enumeration value="lakónegyed"/>
+         <enumeration value="lakópark"/>
+         <enumeration value="lakótelep"/>
+         <enumeration value="lejáró"/>
+         <enumeration value="lejtő"/>
+         <enumeration value="lépcső"/>
+         <enumeration value="liget"/>
+         <enumeration value="major"/>
+         <enumeration value="malom"/>
+         <enumeration value="menedékház"/>
+         <enumeration value="mélyút"/>
+         <enumeration value="munkásszálló"/>
+         <enumeration value="műút"/>
+         <enumeration value="oldal"/>
+         <enumeration value="orom"/>
+         <enumeration value="őrház"/>
+         <enumeration value="őrházak"/>
+         <enumeration value="őrházlak"/>
+         <enumeration value="park"/>
+         <enumeration value="parkja"/>
+         <enumeration value="parkoló"/>
+         <enumeration value="part"/>
+         <enumeration value="pavilon"/>
+         <enumeration value="pálya"/>
+         <enumeration value="pályaudvar"/>
+         <enumeration value="piac"/>
+         <enumeration value="pihenő"/>
+         <enumeration value="pince"/>
+         <enumeration value="pincesor"/>
+         <enumeration value="postafiók"/>
+         <enumeration value="puszta"/>
+         <enumeration value="rakpart"/>
+         <enumeration value="repülőtér"/>
+         <enumeration value="rész"/>
+         <enumeration value="rét"/>
+         <enumeration value="sarok"/>
+         <enumeration value="sánc"/>
+         <enumeration value="sávház"/>
+         <enumeration value="sétány"/>
+         <enumeration value="sor"/>
+         <enumeration value="sora"/>
+         <enumeration value="sportpálya"/>
+         <enumeration value="sporttelep"/>
+         <enumeration value="stadion"/>
+         <enumeration value="strandfürdő"/>
+         <enumeration value="sugárút"/>
+         <enumeration value="szállás"/>
+         <enumeration value="szállások"/>
+         <enumeration value="szer"/>
+         <enumeration value="szél"/>
+         <enumeration value="sziget"/>
+         <enumeration value="szivattyútelep"/>
+         <enumeration value="szőlő"/>
+         <enumeration value="szőlőhegy"/>
+         <enumeration value="szőlők"/>
+         <enumeration value="tag"/>
+         <enumeration value="tanya"/>
+         <enumeration value="tanyák"/>
+         <enumeration value="telep"/>
+         <enumeration value="temető"/>
+         <enumeration value="tere"/>
+         <enumeration value="tető"/>
+         <enumeration value="téli kikötő"/>
+         <enumeration value="tömb"/>
+         <enumeration value="turistaház"/>
+         <enumeration value="udvar"/>
+         <enumeration value="utak"/>
+         <enumeration value="utcája"/>
+         <enumeration value="útja"/>
+         <enumeration value="útőrház"/>
+         <enumeration value="üdülő"/>
+         <enumeration value="üdülő-part"/>
+         <enumeration value="üdülő-sor"/>
+         <enumeration value="üdülő-telep"/>
+         <enumeration value="vadaskert"/>
+         <enumeration value="vadászház"/>
+         <enumeration value="vasútállomás"/>
+         <enumeration value="vasúti megálló"/>
+         <enumeration value="vasúti őrház"/>
+         <enumeration value="vasútsor"/>
+         <enumeration value="vágóhíd"/>
+         <enumeration value="vár"/>
+         <enumeration value="várköz"/>
+         <enumeration value="város"/>
+         <enumeration value="vezetőút"/>
+         <enumeration value="villasor"/>
+         <enumeration value="vízmű"/>
+         <enumeration value="völgy"/>
+         <enumeration value="zsilip"/>
+         <enumeration value="zug"/>
+         <enumeration value="útgyűrű"/>
+         <enumeration value="üdülősétány"/>
+         <enumeration value="aluljáró"/>
+         <enumeration value="lakókert"/>
+         <enumeration value="autópálya"/>
+         <enumeration value="hajóállomás"/>
+         <enumeration value="várkerület"/>
+         <enumeration value="vitorláskikötő"/>
+         <enumeration value="kerület"/>
+         <enumeration value="kertalja"/>
+         <enumeration value="csatornaőrház"/>
+         <enumeration value="erdeje"/>
+         <enumeration value="telek"/>
+         <enumeration value="útfél"/>
+         <enumeration value="széle"/>
+         <enumeration value="bokor"/>
+         <enumeration value="lak"/>
+         <enumeration value="járás"/>
+         <enumeration value="kertváros"/>
+         <enumeration value="szektor"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_TMUNK_egyseges_orszagkodok_monelkul_1">
+      <annotation>
+         <documentation>Enum értékek egyseges_orszagkodok_monelkul mátrix 1. oszlopból.</documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="AD"/>
+         <enumeration value="AE"/>
+         <enumeration value="AF"/>
+         <enumeration value="AG"/>
+         <enumeration value="AI"/>
+         <enumeration value="AL"/>
+         <enumeration value="AM"/>
+         <enumeration value="AO"/>
+         <enumeration value="AQ"/>
+         <enumeration value="AR"/>
+         <enumeration value="AS"/>
+         <enumeration value="AT"/>
+         <enumeration value="AU"/>
+         <enumeration value="AW"/>
+         <enumeration value="AX"/>
+         <enumeration value="AZ"/>
+         <enumeration value="BA"/>
+         <enumeration value="BB"/>
+         <enumeration value="BD"/>
+         <enumeration value="BE"/>
+         <enumeration value="BF"/>
+         <enumeration value="BG"/>
+         <enumeration value="BH"/>
+         <enumeration value="BI"/>
+         <enumeration value="BJ"/>
+         <enumeration value="BL"/>
+         <enumeration value="BM"/>
+         <enumeration value="BN"/>
+         <enumeration value="BO"/>
+         <enumeration value="BQ"/>
+         <enumeration value="BR"/>
+         <enumeration value="BS"/>
+         <enumeration value="BT"/>
+         <enumeration value="BV"/>
+         <enumeration value="BW"/>
+         <enumeration value="BY"/>
+         <enumeration value="BZ"/>
+         <enumeration value="CA"/>
+         <enumeration value="CC"/>
+         <enumeration value="CD"/>
+         <enumeration value="CF"/>
+         <enumeration value="CG"/>
+         <enumeration value="CH"/>
+         <enumeration value="CI"/>
+         <enumeration value="CK"/>
+         <enumeration value="CL"/>
+         <enumeration value="CM"/>
+         <enumeration value="CN"/>
+         <enumeration value="CO"/>
+         <enumeration value="CR"/>
+         <enumeration value="CU"/>
+         <enumeration value="CV"/>
+         <enumeration value="CW"/>
+         <enumeration value="CX"/>
+         <enumeration value="CY"/>
+         <enumeration value="CZ"/>
+         <enumeration value="DE"/>
+         <enumeration value="DJ"/>
+         <enumeration value="DK"/>
+         <enumeration value="DM"/>
+         <enumeration value="DO"/>
+         <enumeration value="DZ"/>
+         <enumeration value="EC"/>
+         <enumeration value="EE"/>
+         <enumeration value="EG"/>
+         <enumeration value="EH"/>
+         <enumeration value="ER"/>
+         <enumeration value="ES"/>
+         <enumeration value="ET"/>
+         <enumeration value="FI"/>
+         <enumeration value="FJ"/>
+         <enumeration value="FK"/>
+         <enumeration value="FM"/>
+         <enumeration value="FO"/>
+         <enumeration value="FR"/>
+         <enumeration value="FX"/>
+         <enumeration value="GA"/>
+         <enumeration value="GB"/>
+         <enumeration value="GD"/>
+         <enumeration value="GE"/>
+         <enumeration value="GF"/>
+         <enumeration value="GG"/>
+         <enumeration value="GH"/>
+         <enumeration value="GI"/>
+         <enumeration value="GL"/>
+         <enumeration value="GM"/>
+         <enumeration value="GN"/>
+         <enumeration value="GP"/>
+         <enumeration value="GQ"/>
+         <enumeration value="GR"/>
+         <enumeration value="GS"/>
+         <enumeration value="GT"/>
+         <enumeration value="GU"/>
+         <enumeration value="GW"/>
+         <enumeration value="GY"/>
+         <enumeration value="HK"/>
+         <enumeration value="HM"/>
+         <enumeration value="HN"/>
+         <enumeration value="HR"/>
+         <enumeration value="HT"/>
+         <enumeration value="ID"/>
+         <enumeration value="IE"/>
+         <enumeration value="IL"/>
+         <enumeration value="IM"/>
+         <enumeration value="IN"/>
+         <enumeration value="IO"/>
+         <enumeration value="IQ"/>
+         <enumeration value="IR"/>
+         <enumeration value="IS"/>
+         <enumeration value="IT"/>
+         <enumeration value="JE"/>
+         <enumeration value="JM"/>
+         <enumeration value="JO"/>
+         <enumeration value="JP"/>
+         <enumeration value="KE"/>
+         <enumeration value="KG"/>
+         <enumeration value="KH"/>
+         <enumeration value="KI"/>
+         <enumeration value="KM"/>
+         <enumeration value="KN"/>
+         <enumeration value="KP"/>
+         <enumeration value="KR"/>
+         <enumeration value="KW"/>
+         <enumeration value="KY"/>
+         <enumeration value="KZ"/>
+         <enumeration value="LA"/>
+         <enumeration value="LB"/>
+         <enumeration value="LC"/>
+         <enumeration value="LI"/>
+         <enumeration value="LK"/>
+         <enumeration value="LR"/>
+         <enumeration value="LS"/>
+         <enumeration value="LT"/>
+         <enumeration value="LU"/>
+         <enumeration value="LV"/>
+         <enumeration value="LY"/>
+         <enumeration value="MA"/>
+         <enumeration value="MC"/>
+         <enumeration value="MD"/>
+         <enumeration value="ME"/>
+         <enumeration value="MF"/>
+         <enumeration value="MG"/>
+         <enumeration value="MH"/>
+         <enumeration value="MK"/>
+         <enumeration value="ML"/>
+         <enumeration value="MM"/>
+         <enumeration value="MN"/>
+         <enumeration value="MO"/>
+         <enumeration value="MP"/>
+         <enumeration value="MQ"/>
+         <enumeration value="MR"/>
+         <enumeration value="MS"/>
+         <enumeration value="MT"/>
+         <enumeration value="MU"/>
+         <enumeration value="MV"/>
+         <enumeration value="MW"/>
+         <enumeration value="MX"/>
+         <enumeration value="MY"/>
+         <enumeration value="MZ"/>
+         <enumeration value="NA"/>
+         <enumeration value="NC"/>
+         <enumeration value="NE"/>
+         <enumeration value="NF"/>
+         <enumeration value="NG"/>
+         <enumeration value="NI"/>
+         <enumeration value="NL"/>
+         <enumeration value="NO"/>
+         <enumeration value="NP"/>
+         <enumeration value="NR"/>
+         <enumeration value="NU"/>
+         <enumeration value="NZ"/>
+         <enumeration value="OM"/>
+         <enumeration value="PA"/>
+         <enumeration value="PE"/>
+         <enumeration value="PF"/>
+         <enumeration value="PG"/>
+         <enumeration value="PH"/>
+         <enumeration value="PK"/>
+         <enumeration value="PL"/>
+         <enumeration value="PM"/>
+         <enumeration value="PN"/>
+         <enumeration value="PR"/>
+         <enumeration value="PS"/>
+         <enumeration value="PT"/>
+         <enumeration value="PW"/>
+         <enumeration value="PY"/>
+         <enumeration value="QA"/>
+         <enumeration value="RE"/>
+         <enumeration value="RO"/>
+         <enumeration value="RS"/>
+         <enumeration value="RU"/>
+         <enumeration value="RW"/>
+         <enumeration value="SA"/>
+         <enumeration value="SB"/>
+         <enumeration value="SC"/>
+         <enumeration value="SD"/>
+         <enumeration value="SE"/>
+         <enumeration value="SG"/>
+         <enumeration value="SH"/>
+         <enumeration value="SI"/>
+         <enumeration value="SJ"/>
+         <enumeration value="SK"/>
+         <enumeration value="SL"/>
+         <enumeration value="SM"/>
+         <enumeration value="SN"/>
+         <enumeration value="SO"/>
+         <enumeration value="SR"/>
+         <enumeration value="SS"/>
+         <enumeration value="ST"/>
+         <enumeration value="SV"/>
+         <enumeration value="SX"/>
+         <enumeration value="SY"/>
+         <enumeration value="SZ"/>
+         <enumeration value="TC"/>
+         <enumeration value="TD"/>
+         <enumeration value="TF"/>
+         <enumeration value="TG"/>
+         <enumeration value="TH"/>
+         <enumeration value="TJ"/>
+         <enumeration value="TK"/>
+         <enumeration value="TL"/>
+         <enumeration value="TM"/>
+         <enumeration value="TN"/>
+         <enumeration value="TO"/>
+         <enumeration value="TR"/>
+         <enumeration value="TT"/>
+         <enumeration value="TV"/>
+         <enumeration value="TW"/>
+         <enumeration value="TZ"/>
+         <enumeration value="UA"/>
+         <enumeration value="UG"/>
+         <enumeration value="UM"/>
+         <enumeration value="US"/>
+         <enumeration value="UY"/>
+         <enumeration value="UZ"/>
+         <enumeration value="VA"/>
+         <enumeration value="VC"/>
+         <enumeration value="VE"/>
+         <enumeration value="VG"/>
+         <enumeration value="VI"/>
+         <enumeration value="VN"/>
+         <enumeration value="VU"/>
+         <enumeration value="W1"/>
+         <enumeration value="WF"/>
+         <enumeration value="WS"/>
+         <enumeration value="XK"/>
+         <enumeration value="YE"/>
+         <enumeration value="YT"/>
+         <enumeration value="ZA"/>
+         <enumeration value="ZM"/>
+         <enumeration value="ZW"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_TMUNK_egyseges_helyseg_1">
+      <annotation>
+         <documentation>Enum értékek egyseges_helyseg mátrix 1. oszlopból.</documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="Aba"/>
+         <enumeration value="Abádszalók"/>
+         <enumeration value="Abaliget"/>
+         <enumeration value="Abasár"/>
+         <enumeration value="Abaújalpár"/>
+         <enumeration value="Abaújkér"/>
+         <enumeration value="Abaújlak"/>
+         <enumeration value="Abaújszántó"/>
+         <enumeration value="Abaújszolnok"/>
+         <enumeration value="Abaújvár"/>
+         <enumeration value="Abda"/>
+         <enumeration value="Abod"/>
+         <enumeration value="Abony"/>
+         <enumeration value="Ábrahámhegy"/>
+         <enumeration value="Ács"/>
+         <enumeration value="Acsa"/>
+         <enumeration value="Acsád"/>
+         <enumeration value="Acsalag"/>
+         <enumeration value="Ácsteszér"/>
+         <enumeration value="Adács"/>
+         <enumeration value="Ádánd"/>
+         <enumeration value="Adásztevel"/>
+         <enumeration value="Adony"/>
+         <enumeration value="Adorjánháza"/>
+         <enumeration value="Adorjás"/>
+         <enumeration value="Ág"/>
+         <enumeration value="Ágasegyháza"/>
+         <enumeration value="Ágfalva"/>
+         <enumeration value="Aggtelek"/>
+         <enumeration value="Agyagosszergény"/>
+         <enumeration value="Ajak"/>
+         <enumeration value="Ajka"/>
+         <enumeration value="Aka"/>
+         <enumeration value="Akasztó"/>
+         <enumeration value="Alacska"/>
+         <enumeration value="Alap"/>
+         <enumeration value="Alattyán"/>
+         <enumeration value="Albertirsa"/>
+         <enumeration value="Alcsútdoboz"/>
+         <enumeration value="Aldebrő"/>
+         <enumeration value="Algyő"/>
+         <enumeration value="Alibánfa"/>
+         <enumeration value="Almamellék"/>
+         <enumeration value="Almásfüzitő"/>
+         <enumeration value="Almásháza"/>
+         <enumeration value="Almáskamarás"/>
+         <enumeration value="Almáskeresztúr"/>
+         <enumeration value="Álmosd"/>
+         <enumeration value="Alsóberecki"/>
+         <enumeration value="Alsóbogát"/>
+         <enumeration value="Alsódobsza"/>
+         <enumeration value="Alsógagy"/>
+         <enumeration value="Alsómocsolád"/>
+         <enumeration value="Alsónána"/>
+         <enumeration value="Alsónémedi"/>
+         <enumeration value="Alsónemesapáti"/>
+         <enumeration value="Alsónyék"/>
+         <enumeration value="Alsóörs"/>
+         <enumeration value="Alsópáhok"/>
+         <enumeration value="Alsópetény"/>
+         <enumeration value="Alsórajk"/>
+         <enumeration value="Alsóregmec"/>
+         <enumeration value="Alsószenterzsébet"/>
+         <enumeration value="Alsószentiván"/>
+         <enumeration value="Alsószentmárton"/>
+         <enumeration value="Alsószölnök"/>
+         <enumeration value="Alsószuha"/>
+         <enumeration value="Alsótelekes"/>
+         <enumeration value="Alsótold"/>
+         <enumeration value="Alsóújlak"/>
+         <enumeration value="Alsóvadász"/>
+         <enumeration value="Alsózsolca"/>
+         <enumeration value="Ambrózfalva"/>
+         <enumeration value="Anarcs"/>
+         <enumeration value="Andocs"/>
+         <enumeration value="Andornaktálya"/>
+         <enumeration value="Andrásfa"/>
+         <enumeration value="Annavölgy"/>
+         <enumeration value="Apácatorna"/>
+         <enumeration value="Apagy"/>
+         <enumeration value="Apaj"/>
+         <enumeration value="Aparhant"/>
+         <enumeration value="Apátfalva"/>
+         <enumeration value="Apátistvánfalva"/>
+         <enumeration value="Apátvarasd"/>
+         <enumeration value="Apc"/>
+         <enumeration value="Áporka"/>
+         <enumeration value="Apostag"/>
+         <enumeration value="Aranyosapáti"/>
+         <enumeration value="Aranyosgadány"/>
+         <enumeration value="Arka"/>
+         <enumeration value="Arló"/>
+         <enumeration value="Arnót"/>
+         <enumeration value="Ároktő"/>
+         <enumeration value="Árpádhalom"/>
+         <enumeration value="Árpás"/>
+         <enumeration value="Ártánd"/>
+         <enumeration value="Ásotthalom"/>
+         <enumeration value="Ásványráró"/>
+         <enumeration value="Aszaló"/>
+         <enumeration value="Ászár"/>
+         <enumeration value="Aszód"/>
+         <enumeration value="Aszófő"/>
+         <enumeration value="Áta"/>
+         <enumeration value="Átány"/>
+         <enumeration value="Atkár"/>
+         <enumeration value="Attala"/>
+         <enumeration value="Babarc"/>
+         <enumeration value="Babarcszőlős"/>
+         <enumeration value="Babócsa"/>
+         <enumeration value="Bábolna"/>
+         <enumeration value="Bábonymegyer"/>
+         <enumeration value="Babosdöbréte"/>
+         <enumeration value="Babót"/>
+         <enumeration value="Bácsalmás"/>
+         <enumeration value="Bácsbokod"/>
+         <enumeration value="Bácsborsód"/>
+         <enumeration value="Bácsszentgyörgy"/>
+         <enumeration value="Bácsszőlős"/>
+         <enumeration value="Badacsonytomaj"/>
+         <enumeration value="Badacsonytördemic"/>
+         <enumeration value="Bag"/>
+         <enumeration value="Bagamér"/>
+         <enumeration value="Baglad"/>
+         <enumeration value="Bagod"/>
+         <enumeration value="Bágyogszovát"/>
+         <enumeration value="Baj"/>
+         <enumeration value="Baja"/>
+         <enumeration value="Bajánsenye"/>
+         <enumeration value="Bajna"/>
+         <enumeration value="Bajót"/>
+         <enumeration value="Bak"/>
+         <enumeration value="Bakháza"/>
+         <enumeration value="Bakóca"/>
+         <enumeration value="Bakonszeg"/>
+         <enumeration value="Bakonya"/>
+         <enumeration value="Bakonybánk"/>
+         <enumeration value="Bakonybél"/>
+         <enumeration value="Bakonycsernye"/>
+         <enumeration value="Bakonygyirót"/>
+         <enumeration value="Bakonyjákó"/>
+         <enumeration value="Bakonykoppány"/>
+         <enumeration value="Bakonykúti"/>
+         <enumeration value="Bakonynána"/>
+         <enumeration value="Bakonyoszlop"/>
+         <enumeration value="Bakonypéterd"/>
+         <enumeration value="Bakonypölöske"/>
+         <enumeration value="Bakonyság"/>
+         <enumeration value="Bakonysárkány"/>
+         <enumeration value="Bakonyszentiván"/>
+         <enumeration value="Bakonyszentkirály"/>
+         <enumeration value="Bakonyszentlászló"/>
+         <enumeration value="Bakonyszombathely"/>
+         <enumeration value="Bakonyszücs"/>
+         <enumeration value="Bakonytamási"/>
+         <enumeration value="Baks"/>
+         <enumeration value="Baksa"/>
+         <enumeration value="Baktakék"/>
+         <enumeration value="Baktalórántháza"/>
+         <enumeration value="Baktüttös"/>
+         <enumeration value="Balajt"/>
+         <enumeration value="Balassagyarmat"/>
+         <enumeration value="Balástya"/>
+         <enumeration value="Balaton"/>
+         <enumeration value="Balatonakali"/>
+         <enumeration value="Balatonakarattya"/>
+         <enumeration value="Balatonalmádi"/>
+         <enumeration value="Balatonberény"/>
+         <enumeration value="Balatonboglár"/>
+         <enumeration value="Balatoncsicsó"/>
+         <enumeration value="Balatonederics"/>
+         <enumeration value="Balatonendréd"/>
+         <enumeration value="Balatonfenyves"/>
+         <enumeration value="Balatonfőkajár"/>
+         <enumeration value="Balatonföldvár"/>
+         <enumeration value="Balatonfüred"/>
+         <enumeration value="Balatonfűzfő"/>
+         <enumeration value="Balatongyörök"/>
+         <enumeration value="Balatonhenye"/>
+         <enumeration value="Balatonkenese"/>
+         <enumeration value="Balatonkeresztúr"/>
+         <enumeration value="Balatonlelle"/>
+         <enumeration value="Balatonmagyaród"/>
+         <enumeration value="Balatonmáriafürdő"/>
+         <enumeration value="Balatonőszöd"/>
+         <enumeration value="Balatonrendes"/>
+         <enumeration value="Balatonszabadi"/>
+         <enumeration value="Balatonszárszó"/>
+         <enumeration value="Balatonszemes"/>
+         <enumeration value="Balatonszentgyörgy"/>
+         <enumeration value="Balatonszepezd"/>
+         <enumeration value="Balatonszőlős"/>
+         <enumeration value="Balatonudvari"/>
+         <enumeration value="Balatonújlak"/>
+         <enumeration value="Balatonvilágos"/>
+         <enumeration value="Balinka"/>
+         <enumeration value="Balkány"/>
+         <enumeration value="Ballószög"/>
+         <enumeration value="Balmazújváros"/>
+         <enumeration value="Balogunyom"/>
+         <enumeration value="Balotaszállás"/>
+         <enumeration value="Balsa"/>
+         <enumeration value="Bálványos"/>
+         <enumeration value="Bana"/>
+         <enumeration value="Bánd"/>
+         <enumeration value="Bánfa"/>
+         <enumeration value="Bánhorváti"/>
+         <enumeration value="Bánk"/>
+         <enumeration value="Bánokszentgyörgy"/>
+         <enumeration value="Bánréve"/>
+         <enumeration value="Bár"/>
+         <enumeration value="Barabás"/>
+         <enumeration value="Baracs"/>
+         <enumeration value="Baracska"/>
+         <enumeration value="Báránd"/>
+         <enumeration value="Baranyahídvég"/>
+         <enumeration value="Baranyajenő"/>
+         <enumeration value="Baranyaszentgyörgy"/>
+         <enumeration value="Barbacs"/>
+         <enumeration value="Barcs"/>
+         <enumeration value="Bárdudvarnok"/>
+         <enumeration value="Barlahida"/>
+         <enumeration value="Bárna"/>
+         <enumeration value="Barnag"/>
+         <enumeration value="Bársonyos"/>
+         <enumeration value="Basal"/>
+         <enumeration value="Baskó"/>
+         <enumeration value="Báta"/>
+         <enumeration value="Bátaapáti"/>
+         <enumeration value="Bátaszék"/>
+         <enumeration value="Baté"/>
+         <enumeration value="Bátmonostor"/>
+         <enumeration value="Bátonyterenye"/>
+         <enumeration value="Bátor"/>
+         <enumeration value="Bátorliget"/>
+         <enumeration value="Battonya"/>
+         <enumeration value="Bátya"/>
+         <enumeration value="Batyk"/>
+         <enumeration value="Bázakerettye"/>
+         <enumeration value="Bazsi"/>
+         <enumeration value="Béb"/>
+         <enumeration value="Becsehely"/>
+         <enumeration value="Becske"/>
+         <enumeration value="Becskeháza"/>
+         <enumeration value="Becsvölgye"/>
+         <enumeration value="Bedegkér"/>
+         <enumeration value="Bedő"/>
+         <enumeration value="Bejcgyertyános"/>
+         <enumeration value="Békás"/>
+         <enumeration value="Bekecs"/>
+         <enumeration value="Békés"/>
+         <enumeration value="Békéscsaba"/>
+         <enumeration value="Békéssámson"/>
+         <enumeration value="Békésszentandrás"/>
+         <enumeration value="Bekölce"/>
+         <enumeration value="Bélapátfalva"/>
+         <enumeration value="Bélavár"/>
+         <enumeration value="Belecska"/>
+         <enumeration value="Beled"/>
+         <enumeration value="Beleg"/>
+         <enumeration value="Belezna"/>
+         <enumeration value="Bélmegyer"/>
+         <enumeration value="Beloiannisz"/>
+         <enumeration value="Belsősárd"/>
+         <enumeration value="Belvárdgyula"/>
+         <enumeration value="Benk"/>
+         <enumeration value="Bénye"/>
+         <enumeration value="Bér"/>
+         <enumeration value="Bérbaltavár"/>
+         <enumeration value="Bercel"/>
+         <enumeration value="Beregdaróc"/>
+         <enumeration value="Beregsurány"/>
+         <enumeration value="Berekböszörmény"/>
+         <enumeration value="Berekfürdő"/>
+         <enumeration value="Beremend"/>
+         <enumeration value="Berente"/>
+         <enumeration value="Beret"/>
+         <enumeration value="Berettyóújfalu"/>
+         <enumeration value="Berhida"/>
+         <enumeration value="Berkenye"/>
+         <enumeration value="Berkesd"/>
+         <enumeration value="Berkesz"/>
+         <enumeration value="Bernecebaráti"/>
+         <enumeration value="Berzék"/>
+         <enumeration value="Berzence"/>
+         <enumeration value="Besence"/>
+         <enumeration value="Besenyőd"/>
+         <enumeration value="Besenyőtelek"/>
+         <enumeration value="Besenyszög"/>
+         <enumeration value="Besnyő"/>
+         <enumeration value="Beszterec"/>
+         <enumeration value="Bezedek"/>
+         <enumeration value="Bezenye"/>
+         <enumeration value="Bezeréd"/>
+         <enumeration value="Bezi"/>
+         <enumeration value="Biatorbágy"/>
+         <enumeration value="Bicsérd"/>
+         <enumeration value="Bicske"/>
+         <enumeration value="Bihardancsháza"/>
+         <enumeration value="Biharkeresztes"/>
+         <enumeration value="Biharnagybajom"/>
+         <enumeration value="Bihartorda"/>
+         <enumeration value="Biharugra"/>
+         <enumeration value="Bikács"/>
+         <enumeration value="Bikal"/>
+         <enumeration value="Biri"/>
+         <enumeration value="Birján"/>
+         <enumeration value="Bisse"/>
+         <enumeration value="Boba"/>
+         <enumeration value="Bocfölde"/>
+         <enumeration value="Boconád"/>
+         <enumeration value="Bócsa"/>
+         <enumeration value="Bocska"/>
+         <enumeration value="Bocskaikert"/>
+         <enumeration value="Boda"/>
+         <enumeration value="Bodajk"/>
+         <enumeration value="Bodmér"/>
+         <enumeration value="Bodolyabér"/>
+         <enumeration value="Bodonhely"/>
+         <enumeration value="Bodony"/>
+         <enumeration value="Bodorfa"/>
+         <enumeration value="Bodrog"/>
+         <enumeration value="Bodroghalom"/>
+         <enumeration value="Bodrogkeresztúr"/>
+         <enumeration value="Bodrogkisfalud"/>
+         <enumeration value="Bodrogolaszi"/>
+         <enumeration value="Bódvalenke"/>
+         <enumeration value="Bódvarákó"/>
+         <enumeration value="Bódvaszilas"/>
+         <enumeration value="Bogács"/>
+         <enumeration value="Bogád"/>
+         <enumeration value="Bogádmindszent"/>
+         <enumeration value="Bogdása"/>
+         <enumeration value="Bogyiszló"/>
+         <enumeration value="Bogyoszló"/>
+         <enumeration value="Bojt"/>
+         <enumeration value="Bókaháza"/>
+         <enumeration value="Bokod"/>
+         <enumeration value="Bokor"/>
+         <enumeration value="Boldog"/>
+         <enumeration value="Boldogasszonyfa"/>
+         <enumeration value="Boldogkőújfalu"/>
+         <enumeration value="Boldogkőváralja"/>
+         <enumeration value="Boldva"/>
+         <enumeration value="Bolhás"/>
+         <enumeration value="Bolhó"/>
+         <enumeration value="Bóly"/>
+         <enumeration value="Boncodfölde"/>
+         <enumeration value="Bonyhád"/>
+         <enumeration value="Bonyhádvarasd"/>
+         <enumeration value="Bonnya"/>
+         <enumeration value="Bordány"/>
+         <enumeration value="Borgáta"/>
+         <enumeration value="Borjád"/>
+         <enumeration value="Borota"/>
+         <enumeration value="Borsfa"/>
+         <enumeration value="Borsodbóta"/>
+         <enumeration value="Borsodgeszt"/>
+         <enumeration value="Borsodivánka"/>
+         <enumeration value="Borsodnádasd"/>
+         <enumeration value="Borsodszentgyörgy"/>
+         <enumeration value="Borsodszirák"/>
+         <enumeration value="Borsosberény"/>
+         <enumeration value="Borszörcsök"/>
+         <enumeration value="Borzavár"/>
+         <enumeration value="Bosta"/>
+         <enumeration value="Botpalád"/>
+         <enumeration value="Botykapeterd"/>
+         <enumeration value="Bozzai"/>
+         <enumeration value="Bozsok"/>
+         <enumeration value="Bózsva"/>
+         <enumeration value="Bő"/>
+         <enumeration value="Bőcs"/>
+         <enumeration value="Böde"/>
+         <enumeration value="Bödeháza"/>
+         <enumeration value="Bögöt"/>
+         <enumeration value="Bögöte"/>
+         <enumeration value="Böhönye"/>
+         <enumeration value="Bököny"/>
+         <enumeration value="Bölcske"/>
+         <enumeration value="Bőny"/>
+         <enumeration value="Börcs"/>
+         <enumeration value="Börzönce"/>
+         <enumeration value="Bősárkány"/>
+         <enumeration value="Bőszénfa"/>
+         <enumeration value="Bucsa"/>
+         <enumeration value="Bucsu"/>
+         <enumeration value="Búcsúszentlászló"/>
+         <enumeration value="Bucsuta"/>
+         <enumeration value="Budajenő"/>
+         <enumeration value="Budakalász"/>
+         <enumeration value="Budakeszi"/>
+         <enumeration value="Budaörs"/>
+         <enumeration value="Budapest"/>
+         <enumeration value="Bugac"/>
+         <enumeration value="Bugacpusztaháza"/>
+         <enumeration value="Bugyi"/>
+         <enumeration value="Buj"/>
+         <enumeration value="Buják"/>
+         <enumeration value="Buzsák"/>
+         <enumeration value="Bük"/>
+         <enumeration value="Bükkábrány"/>
+         <enumeration value="Bükkaranyos"/>
+         <enumeration value="Bükkmogyorósd"/>
+         <enumeration value="Bükkösd"/>
+         <enumeration value="Bükkszék"/>
+         <enumeration value="Bükkszenterzsébet"/>
+         <enumeration value="Bükkszentkereszt"/>
+         <enumeration value="Bükkszentmárton"/>
+         <enumeration value="Bükkzsérc"/>
+         <enumeration value="Bürüs"/>
+         <enumeration value="Büssü"/>
+         <enumeration value="Büttös"/>
+         <enumeration value="Cák"/>
+         <enumeration value="Cakóháza"/>
+         <enumeration value="Cece"/>
+         <enumeration value="Cégénydányád"/>
+         <enumeration value="Cegléd"/>
+         <enumeration value="Ceglédbercel"/>
+         <enumeration value="Celldömölk"/>
+         <enumeration value="Cered"/>
+         <enumeration value="Chernelházadamonya"/>
+         <enumeration value="Cibakháza"/>
+         <enumeration value="Cigánd"/>
+         <enumeration value="Cikó"/>
+         <enumeration value="Cirák"/>
+         <enumeration value="Cún"/>
+         <enumeration value="Csabacsűd"/>
+         <enumeration value="Csabaszabadi"/>
+         <enumeration value="Csabdi"/>
+         <enumeration value="Csabrendek"/>
+         <enumeration value="Csáfordjánosfa"/>
+         <enumeration value="Csaholc"/>
+         <enumeration value="Csajág"/>
+         <enumeration value="Csákány"/>
+         <enumeration value="Csákánydoroszló"/>
+         <enumeration value="Csákberény"/>
+         <enumeration value="Csákvár"/>
+         <enumeration value="Csanádalberti"/>
+         <enumeration value="Csanádapáca"/>
+         <enumeration value="Csanádpalota"/>
+         <enumeration value="Csánig"/>
+         <enumeration value="Csány"/>
+         <enumeration value="Csányoszró"/>
+         <enumeration value="Csanytelek"/>
+         <enumeration value="Csapi"/>
+         <enumeration value="Csapod"/>
+         <enumeration value="Csárdaszállás"/>
+         <enumeration value="Csarnóta"/>
+         <enumeration value="Csaroda"/>
+         <enumeration value="Császár"/>
+         <enumeration value="Császártöltés"/>
+         <enumeration value="Császló"/>
+         <enumeration value="Csátalja"/>
+         <enumeration value="Csatár"/>
+         <enumeration value="Csataszög"/>
+         <enumeration value="Csatka"/>
+         <enumeration value="Csávoly"/>
+         <enumeration value="Csebény"/>
+         <enumeration value="Csécse"/>
+         <enumeration value="Csegöld"/>
+         <enumeration value="Csehbánya"/>
+         <enumeration value="Csehi"/>
+         <enumeration value="Csehimindszent"/>
+         <enumeration value="Csém"/>
+         <enumeration value="Csemő"/>
+         <enumeration value="Csempeszkopács"/>
+         <enumeration value="Csengele"/>
+         <enumeration value="Csenger"/>
+         <enumeration value="Csengersima"/>
+         <enumeration value="Csengerújfalu"/>
+         <enumeration value="Csengőd"/>
+         <enumeration value="Csénye"/>
+         <enumeration value="Csenyéte"/>
+         <enumeration value="Csép"/>
+         <enumeration value="Csépa"/>
+         <enumeration value="Csepreg"/>
+         <enumeration value="Csér"/>
+         <enumeration value="Cserdi"/>
+         <enumeration value="Cserénfa"/>
+         <enumeration value="Cserépfalu"/>
+         <enumeration value="Cserépváralja"/>
+         <enumeration value="Cserháthaláp"/>
+         <enumeration value="Cserhátsurány"/>
+         <enumeration value="Cserhátszentiván"/>
+         <enumeration value="Cserkeszőlő"/>
+         <enumeration value="Cserkút"/>
+         <enumeration value="Csernely"/>
+         <enumeration value="Cserszegtomaj"/>
+         <enumeration value="Csertalakos"/>
+         <enumeration value="Csertő"/>
+         <enumeration value="Csesznek"/>
+         <enumeration value="Csesztreg"/>
+         <enumeration value="Csesztve"/>
+         <enumeration value="Csetény"/>
+         <enumeration value="Csévharaszt"/>
+         <enumeration value="Csibrák"/>
+         <enumeration value="Csikéria"/>
+         <enumeration value="Csikóstőttős"/>
+         <enumeration value="Csikvánd"/>
+         <enumeration value="Csincse"/>
+         <enumeration value="Csipkerek"/>
+         <enumeration value="Csitár"/>
+         <enumeration value="Csobád"/>
+         <enumeration value="Csobaj"/>
+         <enumeration value="Csobánka"/>
+         <enumeration value="Csókakő"/>
+         <enumeration value="Csokonyavisonta"/>
+         <enumeration value="Csokvaomány"/>
+         <enumeration value="Csolnok"/>
+         <enumeration value="Csólyospálos"/>
+         <enumeration value="Csoma"/>
+         <enumeration value="Csomád"/>
+         <enumeration value="Csombárd"/>
+         <enumeration value="Csongrád"/>
+         <enumeration value="Csonkahegyhát"/>
+         <enumeration value="Csonkamindszent"/>
+         <enumeration value="Csopak"/>
+         <enumeration value="Csór"/>
+         <enumeration value="Csorna"/>
+         <enumeration value="Csorvás"/>
+         <enumeration value="Csót"/>
+         <enumeration value="Csöde"/>
+         <enumeration value="Csögle"/>
+         <enumeration value="Csökmő"/>
+         <enumeration value="Csököly"/>
+         <enumeration value="Csömend"/>
+         <enumeration value="Csömödér"/>
+         <enumeration value="Csömör"/>
+         <enumeration value="Csönge"/>
+         <enumeration value="Csörnyeföld"/>
+         <enumeration value="Csörög"/>
+         <enumeration value="Csörötnek"/>
+         <enumeration value="Csősz"/>
+         <enumeration value="Csővár"/>
+         <enumeration value="Csurgó"/>
+         <enumeration value="Csurgónagymarton"/>
+         <enumeration value="Dabas"/>
+         <enumeration value="Dabronc"/>
+         <enumeration value="Dabrony"/>
+         <enumeration value="Dad"/>
+         <enumeration value="Dág"/>
+         <enumeration value="Dáka"/>
+         <enumeration value="Dalmand"/>
+         <enumeration value="Damak"/>
+         <enumeration value="Dámóc"/>
+         <enumeration value="Dánszentmiklós"/>
+         <enumeration value="Dány"/>
+         <enumeration value="Daraboshegy"/>
+         <enumeration value="Darány"/>
+         <enumeration value="Darnó"/>
+         <enumeration value="Darnózseli"/>
+         <enumeration value="Daruszentmiklós"/>
+         <enumeration value="Darvas"/>
+         <enumeration value="Dávod"/>
+         <enumeration value="Debercsény"/>
+         <enumeration value="Debrecen"/>
+         <enumeration value="Debréte"/>
+         <enumeration value="Decs"/>
+         <enumeration value="Dédestapolcsány"/>
+         <enumeration value="Dég"/>
+         <enumeration value="Dejtár"/>
+         <enumeration value="Délegyháza"/>
+         <enumeration value="Demecser"/>
+         <enumeration value="Demjén"/>
+         <enumeration value="Dencsháza"/>
+         <enumeration value="Dénesfa"/>
+         <enumeration value="Derecske"/>
+         <enumeration value="Derekegyház"/>
+         <enumeration value="Deszk"/>
+         <enumeration value="Detek"/>
+         <enumeration value="Detk"/>
+         <enumeration value="Dévaványa"/>
+         <enumeration value="Devecser"/>
+         <enumeration value="Dinnyeberki"/>
+         <enumeration value="Diósberény"/>
+         <enumeration value="Diósd"/>
+         <enumeration value="Diósjenő"/>
+         <enumeration value="Dióskál"/>
+         <enumeration value="Diósviszló"/>
+         <enumeration value="Doba"/>
+         <enumeration value="Doboz"/>
+         <enumeration value="Dobri"/>
+         <enumeration value="Dobronhegy"/>
+         <enumeration value="Dóc"/>
+         <enumeration value="Domaháza"/>
+         <enumeration value="Domaszék"/>
+         <enumeration value="Dombegyház"/>
+         <enumeration value="Dombiratos"/>
+         <enumeration value="Dombóvár"/>
+         <enumeration value="Dombrád"/>
+         <enumeration value="Domony"/>
+         <enumeration value="Domoszló"/>
+         <enumeration value="Dormánd"/>
+         <enumeration value="Dorog"/>
+         <enumeration value="Dorogháza"/>
+         <enumeration value="Dozmat"/>
+         <enumeration value="Döbörhegy"/>
+         <enumeration value="Döbröce"/>
+         <enumeration value="Döbrököz"/>
+         <enumeration value="Döbrönte"/>
+         <enumeration value="Döge"/>
+         <enumeration value="Dömös"/>
+         <enumeration value="Dömsöd"/>
+         <enumeration value="Dör"/>
+         <enumeration value="Dörgicse"/>
+         <enumeration value="Döröske"/>
+         <enumeration value="Dötk"/>
+         <enumeration value="Dövény"/>
+         <enumeration value="Drágszél"/>
+         <enumeration value="Drávacsehi"/>
+         <enumeration value="Drávacsepely"/>
+         <enumeration value="Drávafok"/>
+         <enumeration value="Drávagárdony"/>
+         <enumeration value="Drávaiványi"/>
+         <enumeration value="Drávakeresztúr"/>
+         <enumeration value="Drávapalkonya"/>
+         <enumeration value="Drávapiski"/>
+         <enumeration value="Drávaszabolcs"/>
+         <enumeration value="Drávaszerdahely"/>
+         <enumeration value="Drávasztára"/>
+         <enumeration value="Drávatamási"/>
+         <enumeration value="Drégelypalánk"/>
+         <enumeration value="Dubicsány"/>
+         <enumeration value="Dudar"/>
+         <enumeration value="Duka"/>
+         <enumeration value="Dunaalmás"/>
+         <enumeration value="Dunabogdány"/>
+         <enumeration value="Dunaegyháza"/>
+         <enumeration value="Dunafalva"/>
+         <enumeration value="Dunaföldvár"/>
+         <enumeration value="Dunaharaszti"/>
+         <enumeration value="Dunakeszi"/>
+         <enumeration value="Dunakiliti"/>
+         <enumeration value="Dunapataj"/>
+         <enumeration value="Dunaremete"/>
+         <enumeration value="Dunaszeg"/>
+         <enumeration value="Dunaszekcső"/>
+         <enumeration value="Dunaszentbenedek"/>
+         <enumeration value="Dunaszentgyörgy"/>
+         <enumeration value="Dunaszentmiklós"/>
+         <enumeration value="Dunaszentpál"/>
+         <enumeration value="Dunasziget"/>
+         <enumeration value="Dunatetétlen"/>
+         <enumeration value="Dunaújváros"/>
+         <enumeration value="Dunavarsány"/>
+         <enumeration value="Dunavecse"/>
+         <enumeration value="Dusnok"/>
+         <enumeration value="Dúzs"/>
+         <enumeration value="Ebergőc"/>
+         <enumeration value="Ebes"/>
+         <enumeration value="Écs"/>
+         <enumeration value="Ecséd"/>
+         <enumeration value="Ecseg"/>
+         <enumeration value="Ecsegfalva"/>
+         <enumeration value="Ecseny"/>
+         <enumeration value="Ecser"/>
+         <enumeration value="Edde"/>
+         <enumeration value="Edelény"/>
+         <enumeration value="Edve"/>
+         <enumeration value="Eger"/>
+         <enumeration value="Egerág"/>
+         <enumeration value="Egeralja"/>
+         <enumeration value="Egeraracsa"/>
+         <enumeration value="Egerbakta"/>
+         <enumeration value="Egerbocs"/>
+         <enumeration value="Egercsehi"/>
+         <enumeration value="Egerfarmos"/>
+         <enumeration value="Egerlövő"/>
+         <enumeration value="Egerszalók"/>
+         <enumeration value="Egerszólát"/>
+         <enumeration value="Égerszög"/>
+         <enumeration value="Egervár"/>
+         <enumeration value="Egervölgy"/>
+         <enumeration value="Egyed"/>
+         <enumeration value="Egyek"/>
+         <enumeration value="Egyházasdengeleg"/>
+         <enumeration value="Egyházasfalu"/>
+         <enumeration value="Egyházasgerge"/>
+         <enumeration value="Egyházasharaszti"/>
+         <enumeration value="Egyházashetye"/>
+         <enumeration value="Egyházashollós"/>
+         <enumeration value="Egyházaskesző"/>
+         <enumeration value="Egyházaskozár"/>
+         <enumeration value="Egyházasrádóc"/>
+         <enumeration value="Elek"/>
+         <enumeration value="Ellend"/>
+         <enumeration value="Előszállás"/>
+         <enumeration value="Emőd"/>
+         <enumeration value="Encs"/>
+         <enumeration value="Encsencs"/>
+         <enumeration value="Endrefalva"/>
+         <enumeration value="Endrőc"/>
+         <enumeration value="Enese"/>
+         <enumeration value="Enying"/>
+         <enumeration value="Eperjes"/>
+         <enumeration value="Eperjeske"/>
+         <enumeration value="Eplény"/>
+         <enumeration value="Epöl"/>
+         <enumeration value="Ercsi"/>
+         <enumeration value="Érd"/>
+         <enumeration value="Erdőbénye"/>
+         <enumeration value="Erdőhorváti"/>
+         <enumeration value="Erdőkertes"/>
+         <enumeration value="Erdőkövesd"/>
+         <enumeration value="Erdőkürt"/>
+         <enumeration value="Erdősmárok"/>
+         <enumeration value="Erdősmecske"/>
+         <enumeration value="Erdőtarcsa"/>
+         <enumeration value="Erdőtelek"/>
+         <enumeration value="Erk"/>
+         <enumeration value="Érpatak"/>
+         <enumeration value="Érsekcsanád"/>
+         <enumeration value="Érsekhalma"/>
+         <enumeration value="Érsekvadkert"/>
+         <enumeration value="Értény"/>
+         <enumeration value="Erzsébet"/>
+         <enumeration value="Esztár"/>
+         <enumeration value="Eszteregnye"/>
+         <enumeration value="Esztergályhorváti"/>
+         <enumeration value="Esztergom"/>
+         <enumeration value="Ete"/>
+         <enumeration value="Etes"/>
+         <enumeration value="Etyek"/>
+         <enumeration value="Fábiánháza"/>
+         <enumeration value="Fábiánsebestyén"/>
+         <enumeration value="Fácánkert"/>
+         <enumeration value="Fadd"/>
+         <enumeration value="Fáj"/>
+         <enumeration value="Fajsz"/>
+         <enumeration value="Fancsal"/>
+         <enumeration value="Farád"/>
+         <enumeration value="Farkasgyepű"/>
+         <enumeration value="Farkaslyuk"/>
+         <enumeration value="Farmos"/>
+         <enumeration value="Fazekasboda"/>
+         <enumeration value="Fedémes"/>
+         <enumeration value="Fegyvernek"/>
+         <enumeration value="Fehérgyarmat"/>
+         <enumeration value="Fehértó"/>
+         <enumeration value="Fehérvárcsurgó"/>
+         <enumeration value="Feked"/>
+         <enumeration value="Feketeerdő"/>
+         <enumeration value="Felcsút"/>
+         <enumeration value="Feldebrő"/>
+         <enumeration value="Felgyő"/>
+         <enumeration value="Felpéc"/>
+         <enumeration value="Felsőberecki"/>
+         <enumeration value="Felsőcsatár"/>
+         <enumeration value="Felsődobsza"/>
+         <enumeration value="Felsőegerszeg"/>
+         <enumeration value="Felsőgagy"/>
+         <enumeration value="Felsőjánosfa"/>
+         <enumeration value="Felsőkelecsény"/>
+         <enumeration value="Felsőlajos"/>
+         <enumeration value="Felsőmarác"/>
+         <enumeration value="Felsőmocsolád"/>
+         <enumeration value="Felsőnána"/>
+         <enumeration value="Felsőnyárád"/>
+         <enumeration value="Felsőnyék"/>
+         <enumeration value="Felsőörs"/>
+         <enumeration value="Felsőpáhok"/>
+         <enumeration value="Felsőpakony"/>
+         <enumeration value="Felsőpetény"/>
+         <enumeration value="Felsőrajk"/>
+         <enumeration value="Felsőregmec"/>
+         <enumeration value="Felsőszenterzsébet"/>
+         <enumeration value="Felsőszentiván"/>
+         <enumeration value="Felsőszentmárton"/>
+         <enumeration value="Felsőszölnök"/>
+         <enumeration value="Felsőtárkány"/>
+         <enumeration value="Felsőtelekes"/>
+         <enumeration value="Felsőtold"/>
+         <enumeration value="Felsővadász"/>
+         <enumeration value="Felsőzsolca"/>
+         <enumeration value="Fényeslitke"/>
+         <enumeration value="Fenyőfő"/>
+         <enumeration value="Ferencszállás"/>
+         <enumeration value="Fertőboz"/>
+         <enumeration value="Fertőd"/>
+         <enumeration value="Fertőendréd"/>
+         <enumeration value="Fertőhomok"/>
+         <enumeration value="Fertőrákos"/>
+         <enumeration value="Fertőszentmiklós"/>
+         <enumeration value="Fertőszéplak"/>
+         <enumeration value="Fiad"/>
+         <enumeration value="Filkeháza"/>
+         <enumeration value="Fityeház"/>
+         <enumeration value="Foktő"/>
+         <enumeration value="Folyás"/>
+         <enumeration value="Fonó"/>
+         <enumeration value="Fony"/>
+         <enumeration value="Fonyód"/>
+         <enumeration value="Forráskút"/>
+         <enumeration value="Forró"/>
+         <enumeration value="Fót"/>
+         <enumeration value="Földeák"/>
+         <enumeration value="Földes"/>
+         <enumeration value="Főnyed"/>
+         <enumeration value="Fulókércs"/>
+         <enumeration value="Furta"/>
+         <enumeration value="Füle"/>
+         <enumeration value="Fülesd"/>
+         <enumeration value="Fülöp"/>
+         <enumeration value="Fülöpháza"/>
+         <enumeration value="Fülöpjakab"/>
+         <enumeration value="Fülöpszállás"/>
+         <enumeration value="Fülpösdaróc"/>
+         <enumeration value="Fürged"/>
+         <enumeration value="Füzér"/>
+         <enumeration value="Füzérkajata"/>
+         <enumeration value="Füzérkomlós"/>
+         <enumeration value="Füzérradvány"/>
+         <enumeration value="Füzesabony"/>
+         <enumeration value="Füzesgyarmat"/>
+         <enumeration value="Fűzvölgy"/>
+         <enumeration value="Gáborján"/>
+         <enumeration value="Gáborjánháza"/>
+         <enumeration value="Gacsály"/>
+         <enumeration value="Gadács"/>
+         <enumeration value="Gadány"/>
+         <enumeration value="Gadna"/>
+         <enumeration value="Gádoros"/>
+         <enumeration value="Gagyapáti"/>
+         <enumeration value="Gagybátor"/>
+         <enumeration value="Gagyvendégi"/>
+         <enumeration value="Galambok"/>
+         <enumeration value="Galgaguta"/>
+         <enumeration value="Galgagyörk"/>
+         <enumeration value="Galgahévíz"/>
+         <enumeration value="Galgamácsa"/>
+         <enumeration value="Gálosfa"/>
+         <enumeration value="Galvács"/>
+         <enumeration value="Gamás"/>
+         <enumeration value="Ganna"/>
+         <enumeration value="Gánt"/>
+         <enumeration value="Gara"/>
+         <enumeration value="Garáb"/>
+         <enumeration value="Garabonc"/>
+         <enumeration value="Garadna"/>
+         <enumeration value="Garbolc"/>
+         <enumeration value="Gárdony"/>
+         <enumeration value="Garé"/>
+         <enumeration value="Gasztony"/>
+         <enumeration value="Gátér"/>
+         <enumeration value="Gávavencsellő"/>
+         <enumeration value="Géberjén"/>
+         <enumeration value="Gecse"/>
+         <enumeration value="Géderlak"/>
+         <enumeration value="Gégény"/>
+         <enumeration value="Gelej"/>
+         <enumeration value="Gelénes"/>
+         <enumeration value="Gellénháza"/>
+         <enumeration value="Gelse"/>
+         <enumeration value="Gelsesziget"/>
+         <enumeration value="Gemzse"/>
+         <enumeration value="Gencsapáti"/>
+         <enumeration value="Gérce"/>
+         <enumeration value="Gerde"/>
+         <enumeration value="Gerendás"/>
+         <enumeration value="Gerényes"/>
+         <enumeration value="Geresdlak"/>
+         <enumeration value="Gerjen"/>
+         <enumeration value="Gersekarát"/>
+         <enumeration value="Geszt"/>
+         <enumeration value="Gesztely"/>
+         <enumeration value="Geszteréd"/>
+         <enumeration value="Gétye"/>
+         <enumeration value="Gibárt"/>
+         <enumeration value="Gic"/>
+         <enumeration value="Gige"/>
+         <enumeration value="Gilvánfa"/>
+         <enumeration value="Girincs"/>
+         <enumeration value="Gógánfa"/>
+         <enumeration value="Golop"/>
+         <enumeration value="Gomba"/>
+         <enumeration value="Gombosszeg"/>
+         <enumeration value="Gór"/>
+         <enumeration value="Gordisa"/>
+         <enumeration value="Gosztola"/>
+         <enumeration value="Göd"/>
+         <enumeration value="Gödöllő"/>
+         <enumeration value="Gödre"/>
+         <enumeration value="Gölle"/>
+         <enumeration value="Gömörszőlős"/>
+         <enumeration value="Gönc"/>
+         <enumeration value="Göncruszka"/>
+         <enumeration value="Gönyű"/>
+         <enumeration value="Görbeháza"/>
+         <enumeration value="Görcsöny"/>
+         <enumeration value="Görcsönydoboka"/>
+         <enumeration value="Görgeteg"/>
+         <enumeration value="Gősfa"/>
+         <enumeration value="Grábóc"/>
+         <enumeration value="Gulács"/>
+         <enumeration value="Gutorfölde"/>
+         <enumeration value="Gyál"/>
+         <enumeration value="Gyalóka"/>
+         <enumeration value="Gyanógeregye"/>
+         <enumeration value="Gyarmat"/>
+         <enumeration value="Gyékényes"/>
+         <enumeration value="Gyenesdiás"/>
+         <enumeration value="Gyepükaján"/>
+         <enumeration value="Gyermely"/>
+         <enumeration value="Gyód"/>
+         <enumeration value="Gyomaendrőd"/>
+         <enumeration value="Gyóró"/>
+         <enumeration value="Gyömöre"/>
+         <enumeration value="Gyömrő"/>
+         <enumeration value="Gyöngyfa"/>
+         <enumeration value="Gyöngyös"/>
+         <enumeration value="Gyöngyösfalu"/>
+         <enumeration value="Gyöngyöshalász"/>
+         <enumeration value="Gyöngyösmellék"/>
+         <enumeration value="Gyöngyösoroszi"/>
+         <enumeration value="Gyöngyöspata"/>
+         <enumeration value="Gyöngyössolymos"/>
+         <enumeration value="Gyöngyöstarján"/>
+         <enumeration value="Gyönk"/>
+         <enumeration value="Győr"/>
+         <enumeration value="Győrasszonyfa"/>
+         <enumeration value="Györe"/>
+         <enumeration value="Györgytarló"/>
+         <enumeration value="Györköny"/>
+         <enumeration value="Győrladamér"/>
+         <enumeration value="Győröcske"/>
+         <enumeration value="Győrság"/>
+         <enumeration value="Győrsövényház"/>
+         <enumeration value="Győrszemere"/>
+         <enumeration value="Győrtelek"/>
+         <enumeration value="Győrújbarát"/>
+         <enumeration value="Győrújfalu"/>
+         <enumeration value="Győrvár"/>
+         <enumeration value="Győrzámoly"/>
+         <enumeration value="Gyugy"/>
+         <enumeration value="Gyula"/>
+         <enumeration value="Gyulaháza"/>
+         <enumeration value="Gyulaj"/>
+         <enumeration value="Gyulakeszi"/>
+         <enumeration value="Gyúró"/>
+         <enumeration value="Gyügye"/>
+         <enumeration value="Gyüre"/>
+         <enumeration value="Gyűrűs"/>
+         <enumeration value="Hács"/>
+         <enumeration value="Hagyárosbörönd"/>
+         <enumeration value="Hahót"/>
+         <enumeration value="Hajdúbagos"/>
+         <enumeration value="Hajdúböszörmény"/>
+         <enumeration value="Hajdúdorog"/>
+         <enumeration value="Hajdúhadház"/>
+         <enumeration value="Hajdúnánás"/>
+         <enumeration value="Hajdúsámson"/>
+         <enumeration value="Hajdúszoboszló"/>
+         <enumeration value="Hajdúszovát"/>
+         <enumeration value="Hajmás"/>
+         <enumeration value="Hajmáskér"/>
+         <enumeration value="Hajós"/>
+         <enumeration value="Halastó"/>
+         <enumeration value="Halászi"/>
+         <enumeration value="Halásztelek"/>
+         <enumeration value="Halimba"/>
+         <enumeration value="Halmaj"/>
+         <enumeration value="Halmajugra"/>
+         <enumeration value="Halogy"/>
+         <enumeration value="Hangács"/>
+         <enumeration value="Hangony"/>
+         <enumeration value="Hantos"/>
+         <enumeration value="Harasztifalu"/>
+         <enumeration value="Harc"/>
+         <enumeration value="Harka"/>
+         <enumeration value="Harkakötöny"/>
+         <enumeration value="Harkány"/>
+         <enumeration value="Háromfa"/>
+         <enumeration value="Háromhuta"/>
+         <enumeration value="Harsány"/>
+         <enumeration value="Hárskút"/>
+         <enumeration value="Harta"/>
+         <enumeration value="Hásságy"/>
+         <enumeration value="Hatvan"/>
+         <enumeration value="Hédervár"/>
+         <enumeration value="Hedrehely"/>
+         <enumeration value="Hegyesd"/>
+         <enumeration value="Hegyeshalom"/>
+         <enumeration value="Hegyfalu"/>
+         <enumeration value="Hegyháthodász"/>
+         <enumeration value="Hegyhátmaróc"/>
+         <enumeration value="Hegyhátsál"/>
+         <enumeration value="Hegyhátszentjakab"/>
+         <enumeration value="Hegyhátszentmárton"/>
+         <enumeration value="Hegyhátszentpéter"/>
+         <enumeration value="Hegykő"/>
+         <enumeration value="Hegymagas"/>
+         <enumeration value="Hegymeg"/>
+         <enumeration value="Hegyszentmárton"/>
+         <enumeration value="Héhalom"/>
+         <enumeration value="Hejce"/>
+         <enumeration value="Hejőbába"/>
+         <enumeration value="Hejőkeresztúr"/>
+         <enumeration value="Hejőkürt"/>
+         <enumeration value="Hejőpapi"/>
+         <enumeration value="Hejőszalonta"/>
+         <enumeration value="Helesfa"/>
+         <enumeration value="Helvécia"/>
+         <enumeration value="Hencida"/>
+         <enumeration value="Hencse"/>
+         <enumeration value="Herceghalom"/>
+         <enumeration value="Hercegkút"/>
+         <enumeration value="Hercegszántó"/>
+         <enumeration value="Heréd"/>
+         <enumeration value="Héreg"/>
+         <enumeration value="Herencsény"/>
+         <enumeration value="Herend"/>
+         <enumeration value="Heresznye"/>
+         <enumeration value="Hermánszeg"/>
+         <enumeration value="Hernád"/>
+         <enumeration value="Hernádbűd"/>
+         <enumeration value="Hernádcéce"/>
+         <enumeration value="Hernádkak"/>
+         <enumeration value="Hernádkércs"/>
+         <enumeration value="Hernádnémeti"/>
+         <enumeration value="Hernádpetri"/>
+         <enumeration value="Hernádszentandrás"/>
+         <enumeration value="Hernádszurdok"/>
+         <enumeration value="Hernádvécse"/>
+         <enumeration value="Hernyék"/>
+         <enumeration value="Hét"/>
+         <enumeration value="Hetefejércse"/>
+         <enumeration value="Hetes"/>
+         <enumeration value="Hetvehely"/>
+         <enumeration value="Hetyefő"/>
+         <enumeration value="Heves"/>
+         <enumeration value="Hevesaranyos"/>
+         <enumeration value="Hevesvezekény"/>
+         <enumeration value="Hévíz"/>
+         <enumeration value="Hévízgyörk"/>
+         <enumeration value="Hidas"/>
+         <enumeration value="Hidasnémeti"/>
+         <enumeration value="Hidegkút"/>
+         <enumeration value="Hidegség"/>
+         <enumeration value="Hidvégardó"/>
+         <enumeration value="Himesháza"/>
+         <enumeration value="Himod"/>
+         <enumeration value="Hirics"/>
+         <enumeration value="Hobol"/>
+         <enumeration value="Hodász"/>
+         <enumeration value="Hódmezővásárhely"/>
+         <enumeration value="Hollád"/>
+         <enumeration value="Hollóháza"/>
+         <enumeration value="Hollókő"/>
+         <enumeration value="Homokbödöge"/>
+         <enumeration value="Homokkomárom"/>
+         <enumeration value="Homokmégy"/>
+         <enumeration value="Homokszentgyörgy"/>
+         <enumeration value="Homorúd"/>
+         <enumeration value="Homrogd"/>
+         <enumeration value="Hont"/>
+         <enumeration value="Horpács"/>
+         <enumeration value="Hort"/>
+         <enumeration value="Hortobágy"/>
+         <enumeration value="Horváthertelend"/>
+         <enumeration value="Horvátlövő"/>
+         <enumeration value="Horvátzsidány"/>
+         <enumeration value="Hosszúhetény"/>
+         <enumeration value="Hosszúpályi"/>
+         <enumeration value="Hosszúpereszteg"/>
+         <enumeration value="Hosszúvíz"/>
+         <enumeration value="Hosszúvölgy"/>
+         <enumeration value="Hosztót"/>
+         <enumeration value="Hottó"/>
+         <enumeration value="Hőgyész"/>
+         <enumeration value="Hövej"/>
+         <enumeration value="Hugyag"/>
+         <enumeration value="Hunya"/>
+         <enumeration value="Hunyadfalva"/>
+         <enumeration value="Husztót"/>
+         <enumeration value="Ibafa"/>
+         <enumeration value="Iborfia"/>
+         <enumeration value="Ibrány"/>
+         <enumeration value="Igal"/>
+         <enumeration value="Igar"/>
+         <enumeration value="Igrici"/>
+         <enumeration value="Iharos"/>
+         <enumeration value="Iharosberény"/>
+         <enumeration value="Ikervár"/>
+         <enumeration value="Iklad"/>
+         <enumeration value="Iklanberény"/>
+         <enumeration value="Iklódbördőce"/>
+         <enumeration value="Ikrény"/>
+         <enumeration value="Iliny"/>
+         <enumeration value="Ilk"/>
+         <enumeration value="Illocska"/>
+         <enumeration value="Imola"/>
+         <enumeration value="Imrehegy"/>
+         <enumeration value="Ináncs"/>
+         <enumeration value="Inárcs"/>
+         <enumeration value="Inke"/>
+         <enumeration value="Ipacsfa"/>
+         <enumeration value="Ipolydamásd"/>
+         <enumeration value="Ipolyszög"/>
+         <enumeration value="Ipolytarnóc"/>
+         <enumeration value="Ipolytölgyes"/>
+         <enumeration value="Ipolyvece"/>
+         <enumeration value="Iregszemcse"/>
+         <enumeration value="Irota"/>
+         <enumeration value="Isaszeg"/>
+         <enumeration value="Ispánk"/>
+         <enumeration value="Istenmezeje"/>
+         <enumeration value="Istvándi"/>
+         <enumeration value="Iszkaszentgyörgy"/>
+         <enumeration value="Iszkáz"/>
+         <enumeration value="Isztimér"/>
+         <enumeration value="Ivád"/>
+         <enumeration value="Iván"/>
+         <enumeration value="Ivánbattyán"/>
+         <enumeration value="Ivánc"/>
+         <enumeration value="Iváncsa"/>
+         <enumeration value="Ivándárda"/>
+         <enumeration value="Izmény"/>
+         <enumeration value="Izsák"/>
+         <enumeration value="Izsófalva"/>
+         <enumeration value="Jágónak"/>
+         <enumeration value="Ják"/>
+         <enumeration value="Jakabszállás"/>
+         <enumeration value="Jákfa"/>
+         <enumeration value="Jákfalva"/>
+         <enumeration value="Jákó"/>
+         <enumeration value="Jánd"/>
+         <enumeration value="Jánkmajtis"/>
+         <enumeration value="Jánoshalma"/>
+         <enumeration value="Jánosháza"/>
+         <enumeration value="Jánoshida"/>
+         <enumeration value="Jánossomorja"/>
+         <enumeration value="Járdánháza"/>
+         <enumeration value="Jármi"/>
+         <enumeration value="Jásd"/>
+         <enumeration value="Jászágó"/>
+         <enumeration value="Jászalsószentgyörgy"/>
+         <enumeration value="Jászapáti"/>
+         <enumeration value="Jászárokszállás"/>
+         <enumeration value="Jászberény"/>
+         <enumeration value="Jászboldogháza"/>
+         <enumeration value="Jászdózsa"/>
+         <enumeration value="Jászfelsőszentgyörgy"/>
+         <enumeration value="Jászfényszaru"/>
+         <enumeration value="Jászivány"/>
+         <enumeration value="Jászjákóhalma"/>
+         <enumeration value="Jászkarajenő"/>
+         <enumeration value="Jászkisér"/>
+         <enumeration value="Jászladány"/>
+         <enumeration value="Jászszentandrás"/>
+         <enumeration value="Jászszentlászló"/>
+         <enumeration value="Jásztelek"/>
+         <enumeration value="Jéke"/>
+         <enumeration value="Jenő"/>
+         <enumeration value="Jobaháza"/>
+         <enumeration value="Jobbágyi"/>
+         <enumeration value="Jósvafő"/>
+         <enumeration value="Juta"/>
+         <enumeration value="Kaba"/>
+         <enumeration value="Kacorlak"/>
+         <enumeration value="Kács"/>
+         <enumeration value="Kacsóta"/>
+         <enumeration value="Kadarkút"/>
+         <enumeration value="Kajárpéc"/>
+         <enumeration value="Kajászó"/>
+         <enumeration value="Kajdacs"/>
+         <enumeration value="Kakasd"/>
+         <enumeration value="Kákics"/>
+         <enumeration value="Kakucs"/>
+         <enumeration value="Kál"/>
+         <enumeration value="Kalaznó"/>
+         <enumeration value="Káld"/>
+         <enumeration value="Kálló"/>
+         <enumeration value="Kallósd"/>
+         <enumeration value="Kállósemjén"/>
+         <enumeration value="Kálmáncsa"/>
+         <enumeration value="Kálmánháza"/>
+         <enumeration value="Kálócfa"/>
+         <enumeration value="Kalocsa"/>
+         <enumeration value="Káloz"/>
+         <enumeration value="Kám"/>
+         <enumeration value="Kamond"/>
+         <enumeration value="Kamut"/>
+         <enumeration value="Kánó"/>
+         <enumeration value="Kántorjánosi"/>
+         <enumeration value="Kány"/>
+         <enumeration value="Kánya"/>
+         <enumeration value="Kányavár"/>
+         <enumeration value="Kapolcs"/>
+         <enumeration value="Kápolna"/>
+         <enumeration value="Kápolnásnyék"/>
+         <enumeration value="Kapoly"/>
+         <enumeration value="Kaposfő"/>
+         <enumeration value="Kaposgyarmat"/>
+         <enumeration value="Kaposhomok"/>
+         <enumeration value="Kaposkeresztúr"/>
+         <enumeration value="Kaposmérő"/>
+         <enumeration value="Kapospula"/>
+         <enumeration value="Kaposújlak"/>
+         <enumeration value="Kaposvár"/>
+         <enumeration value="Kaposszekcső"/>
+         <enumeration value="Kaposszerdahely"/>
+         <enumeration value="Káptalanfa"/>
+         <enumeration value="Káptalantóti"/>
+         <enumeration value="Kapuvár"/>
+         <enumeration value="Kára"/>
+         <enumeration value="Karácsond"/>
+         <enumeration value="Karád"/>
+         <enumeration value="Karakó"/>
+         <enumeration value="Karakószörcsök"/>
+         <enumeration value="Karancsalja"/>
+         <enumeration value="Karancsberény"/>
+         <enumeration value="Karancskeszi"/>
+         <enumeration value="Karancslapujtő"/>
+         <enumeration value="Karancsság"/>
+         <enumeration value="Kárász"/>
+         <enumeration value="Karcag"/>
+         <enumeration value="Karcsa"/>
+         <enumeration value="Kardos"/>
+         <enumeration value="Kardoskút"/>
+         <enumeration value="Karmacs"/>
+         <enumeration value="Károlyháza"/>
+         <enumeration value="Karos"/>
+         <enumeration value="Kartal"/>
+         <enumeration value="Kásád"/>
+         <enumeration value="Kaskantyú"/>
+         <enumeration value="Kastélyosdombó"/>
+         <enumeration value="Kaszaper"/>
+         <enumeration value="Kaszó"/>
+         <enumeration value="Katádfa"/>
+         <enumeration value="Katafa"/>
+         <enumeration value="Kátoly"/>
+         <enumeration value="Katymár"/>
+         <enumeration value="Káva"/>
+         <enumeration value="Kávás"/>
+         <enumeration value="Kazár"/>
+         <enumeration value="Kazincbarcika"/>
+         <enumeration value="Kázsmárk"/>
+         <enumeration value="Kazsok"/>
+         <enumeration value="Kecel"/>
+         <enumeration value="Kecskéd"/>
+         <enumeration value="Kecskemét"/>
+         <enumeration value="Kehidakustány"/>
+         <enumeration value="Kék"/>
+         <enumeration value="Kékcse"/>
+         <enumeration value="Kéked"/>
+         <enumeration value="Kékesd"/>
+         <enumeration value="Kékkút"/>
+         <enumeration value="Kelebia"/>
+         <enumeration value="Keléd"/>
+         <enumeration value="Kelemér"/>
+         <enumeration value="Kéleshalom"/>
+         <enumeration value="Kelevíz"/>
+         <enumeration value="Kemecse"/>
+         <enumeration value="Kemence"/>
+         <enumeration value="Kemendollár"/>
+         <enumeration value="Kemeneshőgyész"/>
+         <enumeration value="Kemeneskápolna"/>
+         <enumeration value="Kemenesmagasi"/>
+         <enumeration value="Kemenesmihályfa"/>
+         <enumeration value="Kemenespálfa"/>
+         <enumeration value="Kemenessömjén"/>
+         <enumeration value="Kemenesszentmárton"/>
+         <enumeration value="Kemenesszentpéter"/>
+         <enumeration value="Keménfa"/>
+         <enumeration value="Kémes"/>
+         <enumeration value="Kemestaródfa"/>
+         <enumeration value="Kemse"/>
+         <enumeration value="Kenderes"/>
+         <enumeration value="Kenéz"/>
+         <enumeration value="Kenézlő"/>
+         <enumeration value="Kengyel"/>
+         <enumeration value="Kenyeri"/>
+         <enumeration value="Kercaszomor"/>
+         <enumeration value="Kercseliget"/>
+         <enumeration value="Kerecsend"/>
+         <enumeration value="Kerecseny"/>
+         <enumeration value="Kerekegyháza"/>
+         <enumeration value="Kerekharaszt"/>
+         <enumeration value="Kereki"/>
+         <enumeration value="Kerékteleki"/>
+         <enumeration value="Kerepes"/>
+         <enumeration value="Keresztéte"/>
+         <enumeration value="Kerkabarabás"/>
+         <enumeration value="Kerkafalva"/>
+         <enumeration value="Kerkakutas"/>
+         <enumeration value="Kerkáskápolna"/>
+         <enumeration value="Kerkaszentkirály"/>
+         <enumeration value="Kerkateskánd"/>
+         <enumeration value="Kérsemjén"/>
+         <enumeration value="Kerta"/>
+         <enumeration value="Kertészsziget"/>
+         <enumeration value="Keszeg"/>
+         <enumeration value="Kesznyéten"/>
+         <enumeration value="Keszőhidegkút"/>
+         <enumeration value="Keszthely"/>
+         <enumeration value="Kesztölc"/>
+         <enumeration value="Keszü"/>
+         <enumeration value="Kétbodony"/>
+         <enumeration value="Kétegyháza"/>
+         <enumeration value="Kéthely"/>
+         <enumeration value="Kétpó"/>
+         <enumeration value="Kétsoprony"/>
+         <enumeration value="Kétújfalu"/>
+         <enumeration value="Kétvölgy"/>
+         <enumeration value="Kéty"/>
+         <enumeration value="Kevermes"/>
+         <enumeration value="Kilimán"/>
+         <enumeration value="Kimle"/>
+         <enumeration value="Kincsesbánya"/>
+         <enumeration value="Királd"/>
+         <enumeration value="Királyegyháza"/>
+         <enumeration value="Királyhegyes"/>
+         <enumeration value="Királyszentistván"/>
+         <enumeration value="Kisapáti"/>
+         <enumeration value="Kisapostag"/>
+         <enumeration value="Kisar"/>
+         <enumeration value="Kisasszond"/>
+         <enumeration value="Kisasszonyfa"/>
+         <enumeration value="Kisbabot"/>
+         <enumeration value="Kisbágyon"/>
+         <enumeration value="Kisbajcs"/>
+         <enumeration value="Kisbajom"/>
+         <enumeration value="Kisbárapáti"/>
+         <enumeration value="Kisbárkány"/>
+         <enumeration value="Kisbér"/>
+         <enumeration value="Kisberény"/>
+         <enumeration value="Kisberzseny"/>
+         <enumeration value="Kisbeszterce"/>
+         <enumeration value="Kisbodak"/>
+         <enumeration value="Kisbucsa"/>
+         <enumeration value="Kisbudmér"/>
+         <enumeration value="Kiscsécs"/>
+         <enumeration value="Kiscsehi"/>
+         <enumeration value="Kiscsősz"/>
+         <enumeration value="Kisdér"/>
+         <enumeration value="Kisdobsza"/>
+         <enumeration value="Kisdombegyház"/>
+         <enumeration value="Kisdorog"/>
+         <enumeration value="Kisecset"/>
+         <enumeration value="Kisfalud"/>
+         <enumeration value="Kisfüzes"/>
+         <enumeration value="Kisgörbő"/>
+         <enumeration value="Kisgyalán"/>
+         <enumeration value="Kisgyőr"/>
+         <enumeration value="Kishajmás"/>
+         <enumeration value="Kisharsány"/>
+         <enumeration value="Kishartyán"/>
+         <enumeration value="Kisherend"/>
+         <enumeration value="Kishódos"/>
+         <enumeration value="Kishuta"/>
+         <enumeration value="Kisigmánd"/>
+         <enumeration value="Kisjakabfalva"/>
+         <enumeration value="Kiskassa"/>
+         <enumeration value="Kiskinizs"/>
+         <enumeration value="Kiskorpád"/>
+         <enumeration value="Kisköre"/>
+         <enumeration value="Kiskőrös"/>
+         <enumeration value="Kiskunfélegyháza"/>
+         <enumeration value="Kiskunhalas"/>
+         <enumeration value="Kiskunlacháza"/>
+         <enumeration value="Kiskunmajsa"/>
+         <enumeration value="Kiskutas"/>
+         <enumeration value="Kisláng"/>
+         <enumeration value="Kisléta"/>
+         <enumeration value="Kislippó"/>
+         <enumeration value="Kislőd"/>
+         <enumeration value="Kismányok"/>
+         <enumeration value="Kismarja"/>
+         <enumeration value="Kismaros"/>
+         <enumeration value="Kisnamény"/>
+         <enumeration value="Kisnána"/>
+         <enumeration value="Kisnémedi"/>
+         <enumeration value="Kisnyárád"/>
+         <enumeration value="Kisoroszi"/>
+         <enumeration value="Kispalád"/>
+         <enumeration value="Kispáli"/>
+         <enumeration value="Kispirit"/>
+         <enumeration value="Kisrákos"/>
+         <enumeration value="Kisrécse"/>
+         <enumeration value="Kisrozvágy"/>
+         <enumeration value="Kissikátor"/>
+         <enumeration value="Kissomlyó"/>
+         <enumeration value="Kistamási"/>
+         <enumeration value="Kistapolca"/>
+         <enumeration value="Kistarcsa"/>
+         <enumeration value="Kistelek"/>
+         <enumeration value="Kistokaj"/>
+         <enumeration value="Kistolmács"/>
+         <enumeration value="Kistormás"/>
+         <enumeration value="Kistótfalu"/>
+         <enumeration value="Kisújszállás"/>
+         <enumeration value="Kisunyom"/>
+         <enumeration value="Kisvárda"/>
+         <enumeration value="Kisvarsány"/>
+         <enumeration value="Kisvásárhely"/>
+         <enumeration value="Kisvaszar"/>
+         <enumeration value="Kisvejke"/>
+         <enumeration value="Kiszombor"/>
+         <enumeration value="Kiszsidány"/>
+         <enumeration value="Kisszállás"/>
+         <enumeration value="Kisszékely"/>
+         <enumeration value="Kisszekeres"/>
+         <enumeration value="Kisszentmárton"/>
+         <enumeration value="Kissziget"/>
+         <enumeration value="Kisszőlős"/>
+         <enumeration value="Klárafalva"/>
+         <enumeration value="Kocs"/>
+         <enumeration value="Kocsér"/>
+         <enumeration value="Kocsola"/>
+         <enumeration value="Kocsord"/>
+         <enumeration value="Kóka"/>
+         <enumeration value="Kokad"/>
+         <enumeration value="Kolontár"/>
+         <enumeration value="Komádi"/>
+         <enumeration value="Komárom"/>
+         <enumeration value="Komjáti"/>
+         <enumeration value="Komló"/>
+         <enumeration value="Komlódtótfalu"/>
+         <enumeration value="Komlósd"/>
+         <enumeration value="Komlóska"/>
+         <enumeration value="Komoró"/>
+         <enumeration value="Kompolt"/>
+         <enumeration value="Kondó"/>
+         <enumeration value="Kondorfa"/>
+         <enumeration value="Kondoros"/>
+         <enumeration value="Kóny"/>
+         <enumeration value="Konyár"/>
+         <enumeration value="Kópháza"/>
+         <enumeration value="Koppányszántó"/>
+         <enumeration value="Korlát"/>
+         <enumeration value="Koroncó"/>
+         <enumeration value="Kórós"/>
+         <enumeration value="Kosd"/>
+         <enumeration value="Kóspallag"/>
+         <enumeration value="Kótaj"/>
+         <enumeration value="Kovácshida"/>
+         <enumeration value="Kovácsszénája"/>
+         <enumeration value="Kovácsvágás"/>
+         <enumeration value="Kozárd"/>
+         <enumeration value="Kozármisleny"/>
+         <enumeration value="Kozmadombja"/>
+         <enumeration value="Köblény"/>
+         <enumeration value="Köcsk"/>
+         <enumeration value="Kökény"/>
+         <enumeration value="Kőkút"/>
+         <enumeration value="Kölcse"/>
+         <enumeration value="Kölesd"/>
+         <enumeration value="Kölked"/>
+         <enumeration value="Kömlő"/>
+         <enumeration value="Kömlőd"/>
+         <enumeration value="Kömörő"/>
+         <enumeration value="Kömpöc"/>
+         <enumeration value="Körmend"/>
+         <enumeration value="Környe"/>
+         <enumeration value="Köröm"/>
+         <enumeration value="Kőröshegy"/>
+         <enumeration value="Körösladány"/>
+         <enumeration value="Körösnagyharsány"/>
+         <enumeration value="Köröstarcsa"/>
+         <enumeration value="Kőröstetétlen"/>
+         <enumeration value="Körösújfalu"/>
+         <enumeration value="Körösszakál"/>
+         <enumeration value="Körösszegapáti"/>
+         <enumeration value="Kőszárhegy"/>
+         <enumeration value="Kőszeg"/>
+         <enumeration value="Kőszegdoroszló"/>
+         <enumeration value="Kőszegpaty"/>
+         <enumeration value="Kőszegszerdahely"/>
+         <enumeration value="Kötcse"/>
+         <enumeration value="Kötegyán"/>
+         <enumeration value="Kőtelek"/>
+         <enumeration value="Kővágóörs"/>
+         <enumeration value="Kővágószőlős"/>
+         <enumeration value="Kővágótöttös"/>
+         <enumeration value="Kövegy"/>
+         <enumeration value="Köveskál"/>
+         <enumeration value="Krasznokvajda"/>
+         <enumeration value="Kulcs"/>
+         <enumeration value="Kunadacs"/>
+         <enumeration value="Kunágota"/>
+         <enumeration value="Kunbaja"/>
+         <enumeration value="Kunbaracs"/>
+         <enumeration value="Kuncsorba"/>
+         <enumeration value="Kunfehértó"/>
+         <enumeration value="Kunhegyes"/>
+         <enumeration value="Kunmadaras"/>
+         <enumeration value="Kunpeszér"/>
+         <enumeration value="Kunszállás"/>
+         <enumeration value="Kunszentmárton"/>
+         <enumeration value="Kunszentmiklós"/>
+         <enumeration value="Kunsziget"/>
+         <enumeration value="Kup"/>
+         <enumeration value="Kupa"/>
+         <enumeration value="Kurd"/>
+         <enumeration value="Kurityán"/>
+         <enumeration value="Kustánszeg"/>
+         <enumeration value="Kutas"/>
+         <enumeration value="Kutasó"/>
+         <enumeration value="Kübekháza"/>
+         <enumeration value="Külsősárd"/>
+         <enumeration value="Külsővat"/>
+         <enumeration value="Küngös"/>
+         <enumeration value="Lábatlan"/>
+         <enumeration value="Lábod"/>
+         <enumeration value="Lácacséke"/>
+         <enumeration value="Lad"/>
+         <enumeration value="Ladánybene"/>
+         <enumeration value="Ládbesenyő"/>
+         <enumeration value="Lajoskomárom"/>
+         <enumeration value="Lajosmizse"/>
+         <enumeration value="Lak"/>
+         <enumeration value="Lakhegy"/>
+         <enumeration value="Lakitelek"/>
+         <enumeration value="Lakócsa"/>
+         <enumeration value="Lánycsók"/>
+         <enumeration value="Lápafő"/>
+         <enumeration value="Lapáncsa"/>
+         <enumeration value="Laskod"/>
+         <enumeration value="Lasztonya"/>
+         <enumeration value="Látrány"/>
+         <enumeration value="Lázi"/>
+         <enumeration value="Leányfalu"/>
+         <enumeration value="Leányvár"/>
+         <enumeration value="Lébény"/>
+         <enumeration value="Legénd"/>
+         <enumeration value="Legyesbénye"/>
+         <enumeration value="Léh"/>
+         <enumeration value="Lénárddaróc"/>
+         <enumeration value="Lendvadedes"/>
+         <enumeration value="Lendvajakabfa"/>
+         <enumeration value="Lengyel"/>
+         <enumeration value="Lengyeltóti"/>
+         <enumeration value="Lenti"/>
+         <enumeration value="Lepsény"/>
+         <enumeration value="Lesencefalu"/>
+         <enumeration value="Lesenceistvánd"/>
+         <enumeration value="Lesencetomaj"/>
+         <enumeration value="Létavértes"/>
+         <enumeration value="Letenye"/>
+         <enumeration value="Letkés"/>
+         <enumeration value="Levél"/>
+         <enumeration value="Levelek"/>
+         <enumeration value="Libickozma"/>
+         <enumeration value="Lickóvadamos"/>
+         <enumeration value="Liget"/>
+         <enumeration value="Ligetfalva"/>
+         <enumeration value="Lipót"/>
+         <enumeration value="Lippó"/>
+         <enumeration value="Liptód"/>
+         <enumeration value="Lispeszentadorján"/>
+         <enumeration value="Liszó"/>
+         <enumeration value="Litér"/>
+         <enumeration value="Litka"/>
+         <enumeration value="Litke"/>
+         <enumeration value="Lócs"/>
+         <enumeration value="Lókút"/>
+         <enumeration value="Lónya"/>
+         <enumeration value="Lórév"/>
+         <enumeration value="Lothárd"/>
+         <enumeration value="Lovas"/>
+         <enumeration value="Lovasberény"/>
+         <enumeration value="Lovászhetény"/>
+         <enumeration value="Lovászi"/>
+         <enumeration value="Lovászpatona"/>
+         <enumeration value="Lőkösháza"/>
+         <enumeration value="Lőrinci"/>
+         <enumeration value="Lövő"/>
+         <enumeration value="Lövőpetri"/>
+         <enumeration value="Lucfalva"/>
+         <enumeration value="Ludányhalászi"/>
+         <enumeration value="Ludas"/>
+         <enumeration value="Lukácsháza"/>
+         <enumeration value="Lulla"/>
+         <enumeration value="Lúzsok"/>
+         <enumeration value="Mád"/>
+         <enumeration value="Madaras"/>
+         <enumeration value="Madocsa"/>
+         <enumeration value="Maglóca"/>
+         <enumeration value="Maglód"/>
+         <enumeration value="Mágocs"/>
+         <enumeration value="Magosliget"/>
+         <enumeration value="Magy"/>
+         <enumeration value="Magyaralmás"/>
+         <enumeration value="Magyaratád"/>
+         <enumeration value="Magyarbánhegyes"/>
+         <enumeration value="Magyarbóly"/>
+         <enumeration value="Magyarcsanád"/>
+         <enumeration value="Magyardombegyház"/>
+         <enumeration value="Magyaregregy"/>
+         <enumeration value="Magyaregres"/>
+         <enumeration value="Magyarföld"/>
+         <enumeration value="Magyargéc"/>
+         <enumeration value="Magyargencs"/>
+         <enumeration value="Magyarhertelend"/>
+         <enumeration value="Magyarhomorog"/>
+         <enumeration value="Magyarkeresztúr"/>
+         <enumeration value="Magyarkeszi"/>
+         <enumeration value="Magyarlak"/>
+         <enumeration value="Magyarlukafa"/>
+         <enumeration value="Magyarmecske"/>
+         <enumeration value="Magyarnádalja"/>
+         <enumeration value="Magyarnándor"/>
+         <enumeration value="Magyarpolány"/>
+         <enumeration value="Magyarsarlós"/>
+         <enumeration value="Magyarszecsőd"/>
+         <enumeration value="Magyarszék"/>
+         <enumeration value="Magyarszentmiklós"/>
+         <enumeration value="Magyarszerdahely"/>
+         <enumeration value="Magyarszombatfa"/>
+         <enumeration value="Magyartelek"/>
+         <enumeration value="Majosháza"/>
+         <enumeration value="Majs"/>
+         <enumeration value="Makád"/>
+         <enumeration value="Makkoshotyka"/>
+         <enumeration value="Maklár"/>
+         <enumeration value="Makó"/>
+         <enumeration value="Malomsok"/>
+         <enumeration value="Mályi"/>
+         <enumeration value="Mályinka"/>
+         <enumeration value="Mánd"/>
+         <enumeration value="Mándok"/>
+         <enumeration value="Mánfa"/>
+         <enumeration value="Mány"/>
+         <enumeration value="Maráza"/>
+         <enumeration value="Marcalgergelyi"/>
+         <enumeration value="Marcali"/>
+         <enumeration value="Marcaltő"/>
+         <enumeration value="Márfa"/>
+         <enumeration value="Máriahalom"/>
+         <enumeration value="Máriakálnok"/>
+         <enumeration value="Máriakéménd"/>
+         <enumeration value="Márianosztra"/>
+         <enumeration value="Máriapócs"/>
+         <enumeration value="Markaz"/>
+         <enumeration value="Márkháza"/>
+         <enumeration value="Márkó"/>
+         <enumeration value="Markóc"/>
+         <enumeration value="Markotabödöge"/>
+         <enumeration value="Maróc"/>
+         <enumeration value="Marócsa"/>
+         <enumeration value="Márok"/>
+         <enumeration value="Márokföld"/>
+         <enumeration value="Márokpapi"/>
+         <enumeration value="Maroslele"/>
+         <enumeration value="Mártély"/>
+         <enumeration value="Martfű"/>
+         <enumeration value="Martonfa"/>
+         <enumeration value="Martonvásár"/>
+         <enumeration value="Martonyi"/>
+         <enumeration value="Mátészalka"/>
+         <enumeration value="Mátételke"/>
+         <enumeration value="Mátraballa"/>
+         <enumeration value="Mátraderecske"/>
+         <enumeration value="Mátramindszent"/>
+         <enumeration value="Mátranovák"/>
+         <enumeration value="Mátraszele"/>
+         <enumeration value="Mátraszentimre"/>
+         <enumeration value="Mátraszőlős"/>
+         <enumeration value="Mátraterenye"/>
+         <enumeration value="Mátraverebély"/>
+         <enumeration value="Mátyásdomb"/>
+         <enumeration value="Matty"/>
+         <enumeration value="Mátyus"/>
+         <enumeration value="Máza"/>
+         <enumeration value="Mecseknádasd"/>
+         <enumeration value="Mecsekpölöske"/>
+         <enumeration value="Mecsér"/>
+         <enumeration value="Medgyesbodzás"/>
+         <enumeration value="Medgyesegyháza"/>
+         <enumeration value="Medina"/>
+         <enumeration value="Megyaszó"/>
+         <enumeration value="Megyehíd"/>
+         <enumeration value="Megyer"/>
+         <enumeration value="Meggyeskovácsi"/>
+         <enumeration value="Méhkerék"/>
+         <enumeration value="Méhtelek"/>
+         <enumeration value="Mekényes"/>
+         <enumeration value="Mélykút"/>
+         <enumeration value="Mencshely"/>
+         <enumeration value="Mende"/>
+         <enumeration value="Méra"/>
+         <enumeration value="Merenye"/>
+         <enumeration value="Mérges"/>
+         <enumeration value="Mérk"/>
+         <enumeration value="Mernye"/>
+         <enumeration value="Mersevát"/>
+         <enumeration value="Mesterháza"/>
+         <enumeration value="Mesteri"/>
+         <enumeration value="Mesterszállás"/>
+         <enumeration value="Meszes"/>
+         <enumeration value="Meszlen"/>
+         <enumeration value="Mesztegnyő"/>
+         <enumeration value="Mezőberény"/>
+         <enumeration value="Mezőcsát"/>
+         <enumeration value="Mezőcsokonya"/>
+         <enumeration value="Meződ"/>
+         <enumeration value="Mezőfalva"/>
+         <enumeration value="Mezőgyán"/>
+         <enumeration value="Mezőhegyes"/>
+         <enumeration value="Mezőhék"/>
+         <enumeration value="Mezőkeresztes"/>
+         <enumeration value="Mezőkomárom"/>
+         <enumeration value="Mezőkovácsháza"/>
+         <enumeration value="Mezőkövesd"/>
+         <enumeration value="Mezőladány"/>
+         <enumeration value="Mezőlak"/>
+         <enumeration value="Mezőnagymihály"/>
+         <enumeration value="Mezőnyárád"/>
+         <enumeration value="Mezőörs"/>
+         <enumeration value="Mezőpeterd"/>
+         <enumeration value="Mezősas"/>
+         <enumeration value="Mezőszemere"/>
+         <enumeration value="Mezőszentgyörgy"/>
+         <enumeration value="Mezőszilas"/>
+         <enumeration value="Mezőtárkány"/>
+         <enumeration value="Mezőtúr"/>
+         <enumeration value="Mezőzombor"/>
+         <enumeration value="Miháld"/>
+         <enumeration value="Mihályfa"/>
+         <enumeration value="Mihálygerge"/>
+         <enumeration value="Mihályháza"/>
+         <enumeration value="Mihályi"/>
+         <enumeration value="Mike"/>
+         <enumeration value="Mikebuda"/>
+         <enumeration value="Mikekarácsonyfa"/>
+         <enumeration value="Mikepércs"/>
+         <enumeration value="Miklósi"/>
+         <enumeration value="Mikófalva"/>
+         <enumeration value="Mikóháza"/>
+         <enumeration value="Mikosszéplak"/>
+         <enumeration value="Milejszeg"/>
+         <enumeration value="Milota"/>
+         <enumeration value="Mindszent"/>
+         <enumeration value="Mindszentgodisa"/>
+         <enumeration value="Mindszentkálla"/>
+         <enumeration value="Misefa"/>
+         <enumeration value="Miske"/>
+         <enumeration value="Miskolc"/>
+         <enumeration value="Miszla"/>
+         <enumeration value="Mocsa"/>
+         <enumeration value="Mogyoród"/>
+         <enumeration value="Mogyorósbánya"/>
+         <enumeration value="Mogyoróska"/>
+         <enumeration value="Moha"/>
+         <enumeration value="Mohács"/>
+         <enumeration value="Mohora"/>
+         <enumeration value="Molnári"/>
+         <enumeration value="Molnaszecsőd"/>
+         <enumeration value="Molvány"/>
+         <enumeration value="Monaj"/>
+         <enumeration value="Monok"/>
+         <enumeration value="Monor"/>
+         <enumeration value="Monorierdő"/>
+         <enumeration value="Mónosbél"/>
+         <enumeration value="Monostorapáti"/>
+         <enumeration value="Monostorpályi"/>
+         <enumeration value="Monoszló"/>
+         <enumeration value="Monyoród"/>
+         <enumeration value="Mór"/>
+         <enumeration value="Mórágy"/>
+         <enumeration value="Mórahalom"/>
+         <enumeration value="Móricgát"/>
+         <enumeration value="Mórichida"/>
+         <enumeration value="Mosdós"/>
+         <enumeration value="Mosonmagyaróvár"/>
+         <enumeration value="Mosonszentmiklós"/>
+         <enumeration value="Mosonszolnok"/>
+         <enumeration value="Mosonudvar"/>
+         <enumeration value="Mozsgó"/>
+         <enumeration value="Mőcsény"/>
+         <enumeration value="Mucsfa"/>
+         <enumeration value="Mucsi"/>
+         <enumeration value="Múcsony"/>
+         <enumeration value="Muhi"/>
+         <enumeration value="Murakeresztúr"/>
+         <enumeration value="Murarátka"/>
+         <enumeration value="Muraszemenye"/>
+         <enumeration value="Murga"/>
+         <enumeration value="Murony"/>
+         <enumeration value="Nábrád"/>
+         <enumeration value="Nadap"/>
+         <enumeration value="Nádasd"/>
+         <enumeration value="Nádasdladány"/>
+         <enumeration value="Nádudvar"/>
+         <enumeration value="Nágocs"/>
+         <enumeration value="Nagyacsád"/>
+         <enumeration value="Nagyalásony"/>
+         <enumeration value="Nagyar"/>
+         <enumeration value="Nagyatád"/>
+         <enumeration value="Nagybajcs"/>
+         <enumeration value="Nagybajom"/>
+         <enumeration value="Nagybakónak"/>
+         <enumeration value="Nagybánhegyes"/>
+         <enumeration value="Nagybaracska"/>
+         <enumeration value="Nagybarca"/>
+         <enumeration value="Nagybárkány"/>
+         <enumeration value="Nagyberény"/>
+         <enumeration value="Nagyberki"/>
+         <enumeration value="Nagybörzsöny"/>
+         <enumeration value="Nagybudmér"/>
+         <enumeration value="Nagycenk"/>
+         <enumeration value="Nagycsány"/>
+         <enumeration value="Nagycsécs"/>
+         <enumeration value="Nagycsepely"/>
+         <enumeration value="Nagycserkesz"/>
+         <enumeration value="Nagydém"/>
+         <enumeration value="Nagydobos"/>
+         <enumeration value="Nagydobsza"/>
+         <enumeration value="Nagydorog"/>
+         <enumeration value="Nagyecsed"/>
+         <enumeration value="Nagyér"/>
+         <enumeration value="Nagyesztergár"/>
+         <enumeration value="Nagyfüged"/>
+         <enumeration value="Nagygeresd"/>
+         <enumeration value="Nagygörbő"/>
+         <enumeration value="Nagygyimót"/>
+         <enumeration value="Nagyhajmás"/>
+         <enumeration value="Nagyhalász"/>
+         <enumeration value="Nagyharsány"/>
+         <enumeration value="Nagyhegyes"/>
+         <enumeration value="Nagyhódos"/>
+         <enumeration value="Nagyhuta"/>
+         <enumeration value="Nagyigmánd"/>
+         <enumeration value="Nagyiván"/>
+         <enumeration value="Nagykálló"/>
+         <enumeration value="Nagykamarás"/>
+         <enumeration value="Nagykanizsa"/>
+         <enumeration value="Nagykapornak"/>
+         <enumeration value="Nagykarácsony"/>
+         <enumeration value="Nagykáta"/>
+         <enumeration value="Nagykereki"/>
+         <enumeration value="Nagykeresztúr"/>
+         <enumeration value="Nagykinizs"/>
+         <enumeration value="Nagykónyi"/>
+         <enumeration value="Nagykorpád"/>
+         <enumeration value="Nagykovácsi"/>
+         <enumeration value="Nagykozár"/>
+         <enumeration value="Nagykökényes"/>
+         <enumeration value="Nagykölked"/>
+         <enumeration value="Nagykőrös"/>
+         <enumeration value="Nagykörű"/>
+         <enumeration value="Nagykutas"/>
+         <enumeration value="Nagylak"/>
+         <enumeration value="Nagylengyel"/>
+         <enumeration value="Nagylóc"/>
+         <enumeration value="Nagylók"/>
+         <enumeration value="Nagylózs"/>
+         <enumeration value="Nagymágocs"/>
+         <enumeration value="Nagymányok"/>
+         <enumeration value="Nagymaros"/>
+         <enumeration value="Nagymizdó"/>
+         <enumeration value="Nagynyárád"/>
+         <enumeration value="Nagyoroszi"/>
+         <enumeration value="Nagypáli"/>
+         <enumeration value="Nagypall"/>
+         <enumeration value="Nagypeterd"/>
+         <enumeration value="Nagypirit"/>
+         <enumeration value="Nagyrábé"/>
+         <enumeration value="Nagyrada"/>
+         <enumeration value="Nagyrákos"/>
+         <enumeration value="Nagyrécse"/>
+         <enumeration value="Nagyréde"/>
+         <enumeration value="Nagyrév"/>
+         <enumeration value="Nagyrozvágy"/>
+         <enumeration value="Nagysáp"/>
+         <enumeration value="Nagysimonyi"/>
+         <enumeration value="Nagyszakácsi"/>
+         <enumeration value="Nagyszékely"/>
+         <enumeration value="Nagyszekeres"/>
+         <enumeration value="Nagyszénás"/>
+         <enumeration value="Nagyszentjános"/>
+         <enumeration value="Nagyszokoly"/>
+         <enumeration value="Nagytálya"/>
+         <enumeration value="Nagytarcsa"/>
+         <enumeration value="Nagytevel"/>
+         <enumeration value="Nagytilaj"/>
+         <enumeration value="Nagytótfalu"/>
+         <enumeration value="Nagytőke"/>
+         <enumeration value="Nagyút"/>
+         <enumeration value="Nagyvarsány"/>
+         <enumeration value="Nagyváty"/>
+         <enumeration value="Nagyvázsony"/>
+         <enumeration value="Nagyvejke"/>
+         <enumeration value="Nagyveleg"/>
+         <enumeration value="Nagyvenyim"/>
+         <enumeration value="Nagyvisnyó"/>
+         <enumeration value="Nak"/>
+         <enumeration value="Napkor"/>
+         <enumeration value="Nárai"/>
+         <enumeration value="Narda"/>
+         <enumeration value="Naszály"/>
+         <enumeration value="Négyes"/>
+         <enumeration value="Nekézseny"/>
+         <enumeration value="Nemesapáti"/>
+         <enumeration value="Nemesbikk"/>
+         <enumeration value="Nemesborzova"/>
+         <enumeration value="Nemesbőd"/>
+         <enumeration value="Nemesbük"/>
+         <enumeration value="Nemescsó"/>
+         <enumeration value="Nemesdéd"/>
+         <enumeration value="Nemesgörzsöny"/>
+         <enumeration value="Nemesgulács"/>
+         <enumeration value="Nemeshany"/>
+         <enumeration value="Nemeshetés"/>
+         <enumeration value="Nemeske"/>
+         <enumeration value="Nemeskér"/>
+         <enumeration value="Nemeskeresztúr"/>
+         <enumeration value="Nemeskisfalud"/>
+         <enumeration value="Nemeskocs"/>
+         <enumeration value="Nemeskolta"/>
+         <enumeration value="Nemesládony"/>
+         <enumeration value="Nemesmedves"/>
+         <enumeration value="Nemesnádudvar"/>
+         <enumeration value="Nemesnép"/>
+         <enumeration value="Nemespátró"/>
+         <enumeration value="Nemesrádó"/>
+         <enumeration value="Nemesrempehollós"/>
+         <enumeration value="Nemessándorháza"/>
+         <enumeration value="Nemesvámos"/>
+         <enumeration value="Nemesvid"/>
+         <enumeration value="Nemesvita"/>
+         <enumeration value="Nemesszalók"/>
+         <enumeration value="Nemesszentandrás"/>
+         <enumeration value="Németbánya"/>
+         <enumeration value="Németfalu"/>
+         <enumeration value="Németkér"/>
+         <enumeration value="Nemti"/>
+         <enumeration value="Neszmély"/>
+         <enumeration value="Nézsa"/>
+         <enumeration value="Nick"/>
+         <enumeration value="Nikla"/>
+         <enumeration value="Nógrád"/>
+         <enumeration value="Nógrádkövesd"/>
+         <enumeration value="Nógrádmarcal"/>
+         <enumeration value="Nógrádmegyer"/>
+         <enumeration value="Nógrádsáp"/>
+         <enumeration value="Nógrádsipek"/>
+         <enumeration value="Nógrádszakál"/>
+         <enumeration value="Nóráp"/>
+         <enumeration value="Noszlop"/>
+         <enumeration value="Noszvaj"/>
+         <enumeration value="Nova"/>
+         <enumeration value="Novaj"/>
+         <enumeration value="Novajidrány"/>
+         <enumeration value="Nőtincs"/>
+         <enumeration value="Nyalka"/>
+         <enumeration value="Nyárád"/>
+         <enumeration value="Nyáregyháza"/>
+         <enumeration value="Nyárlőrinc"/>
+         <enumeration value="Nyársapát"/>
+         <enumeration value="Nyékládháza"/>
+         <enumeration value="Nyergesújfalu"/>
+         <enumeration value="Nyésta"/>
+         <enumeration value="Nyim"/>
+         <enumeration value="Nyírábrány"/>
+         <enumeration value="Nyíracsád"/>
+         <enumeration value="Nyirád"/>
+         <enumeration value="Nyíradony"/>
+         <enumeration value="Nyírbátor"/>
+         <enumeration value="Nyírbéltek"/>
+         <enumeration value="Nyírbogát"/>
+         <enumeration value="Nyírbogdány"/>
+         <enumeration value="Nyírcsaholy"/>
+         <enumeration value="Nyírcsászári"/>
+         <enumeration value="Nyírderzs"/>
+         <enumeration value="Nyíregyháza"/>
+         <enumeration value="Nyírgelse"/>
+         <enumeration value="Nyírgyulaj"/>
+         <enumeration value="Nyíri"/>
+         <enumeration value="Nyíribrony"/>
+         <enumeration value="Nyírjákó"/>
+         <enumeration value="Nyírkarász"/>
+         <enumeration value="Nyírkáta"/>
+         <enumeration value="Nyírkércs"/>
+         <enumeration value="Nyírlövő"/>
+         <enumeration value="Nyírlugos"/>
+         <enumeration value="Nyírmada"/>
+         <enumeration value="Nyírmártonfalva"/>
+         <enumeration value="Nyírmeggyes"/>
+         <enumeration value="Nyírmihálydi"/>
+         <enumeration value="Nyírparasznya"/>
+         <enumeration value="Nyírpazony"/>
+         <enumeration value="Nyírpilis"/>
+         <enumeration value="Nyírtass"/>
+         <enumeration value="Nyírtelek"/>
+         <enumeration value="Nyírtét"/>
+         <enumeration value="Nyírtura"/>
+         <enumeration value="Nyírvasvári"/>
+         <enumeration value="Nyomár"/>
+         <enumeration value="Nyőgér"/>
+         <enumeration value="Nyugotszenterzsébet"/>
+         <enumeration value="Nyúl"/>
+         <enumeration value="Óbánya"/>
+         <enumeration value="Óbarok"/>
+         <enumeration value="Óbudavár"/>
+         <enumeration value="Ócsa"/>
+         <enumeration value="Ócsárd"/>
+         <enumeration value="Ófalu"/>
+         <enumeration value="Ófehértó"/>
+         <enumeration value="Óföldeák"/>
+         <enumeration value="Óhíd"/>
+         <enumeration value="Okány"/>
+         <enumeration value="Okorág"/>
+         <enumeration value="Okorvölgy"/>
+         <enumeration value="Olasz"/>
+         <enumeration value="Olaszfa"/>
+         <enumeration value="Olaszfalu"/>
+         <enumeration value="Olaszliszka"/>
+         <enumeration value="Olcsva"/>
+         <enumeration value="Olcsvaapáti"/>
+         <enumeration value="Old"/>
+         <enumeration value="Ólmod"/>
+         <enumeration value="Oltárc"/>
+         <enumeration value="Onga"/>
+         <enumeration value="Ónod"/>
+         <enumeration value="Ópályi"/>
+         <enumeration value="Ópusztaszer"/>
+         <enumeration value="Orbányosfa"/>
+         <enumeration value="Orci"/>
+         <enumeration value="Ordacsehi"/>
+         <enumeration value="Ordas"/>
+         <enumeration value="Orfalu"/>
+         <enumeration value="Orfű"/>
+         <enumeration value="Orgovány"/>
+         <enumeration value="Ormándlak"/>
+         <enumeration value="Ormosbánya"/>
+         <enumeration value="Orosháza"/>
+         <enumeration value="Oroszi"/>
+         <enumeration value="Oroszlány"/>
+         <enumeration value="Oroszló"/>
+         <enumeration value="Orosztony"/>
+         <enumeration value="Ortaháza"/>
+         <enumeration value="Osli"/>
+         <enumeration value="Ostffyasszonyfa"/>
+         <enumeration value="Ostoros"/>
+         <enumeration value="Oszkó"/>
+         <enumeration value="Oszlár"/>
+         <enumeration value="Osztopán"/>
+         <enumeration value="Ózd"/>
+         <enumeration value="Ózdfalu"/>
+         <enumeration value="Ozmánbük"/>
+         <enumeration value="Ozora"/>
+         <enumeration value="Öcs"/>
+         <enumeration value="Őcsény"/>
+         <enumeration value="Öcsöd"/>
+         <enumeration value="Ököritófülpös"/>
+         <enumeration value="Ölbő"/>
+         <enumeration value="Ömböly"/>
+         <enumeration value="Őr"/>
+         <enumeration value="Őrbottyán"/>
+         <enumeration value="Öregcsertő"/>
+         <enumeration value="Öreglak"/>
+         <enumeration value="Őrhalom"/>
+         <enumeration value="Őrimagyarósd"/>
+         <enumeration value="Őriszentpéter"/>
+         <enumeration value="Örkény"/>
+         <enumeration value="Örményes"/>
+         <enumeration value="Örménykút"/>
+         <enumeration value="Őrtilos"/>
+         <enumeration value="Örvényes"/>
+         <enumeration value="Ősagárd"/>
+         <enumeration value="Ősi"/>
+         <enumeration value="Öskü"/>
+         <enumeration value="Öttevény"/>
+         <enumeration value="Öttömös"/>
+         <enumeration value="Ötvöskónyi"/>
+         <enumeration value="Pácin"/>
+         <enumeration value="Pacsa"/>
+         <enumeration value="Pácsony"/>
+         <enumeration value="Padár"/>
+         <enumeration value="Páhi"/>
+         <enumeration value="Páka"/>
+         <enumeration value="Pakod"/>
+         <enumeration value="Pákozd"/>
+         <enumeration value="Paks"/>
+         <enumeration value="Palé"/>
+         <enumeration value="Pálfa"/>
+         <enumeration value="Pálfiszeg"/>
+         <enumeration value="Pálháza"/>
+         <enumeration value="Páli"/>
+         <enumeration value="Palkonya"/>
+         <enumeration value="Pálmajor"/>
+         <enumeration value="Pálmonostora"/>
+         <enumeration value="Pálosvörösmart"/>
+         <enumeration value="Palotabozsok"/>
+         <enumeration value="Palotás"/>
+         <enumeration value="Paloznak"/>
+         <enumeration value="Pamlény"/>
+         <enumeration value="Pamuk"/>
+         <enumeration value="Pánd"/>
+         <enumeration value="Pankasz"/>
+         <enumeration value="Pannonhalma"/>
+         <enumeration value="Pányok"/>
+         <enumeration value="Panyola"/>
+         <enumeration value="Pap"/>
+         <enumeration value="Pápa"/>
+         <enumeration value="Pápadereske"/>
+         <enumeration value="Pápakovácsi"/>
+         <enumeration value="Pápasalamon"/>
+         <enumeration value="Pápateszér"/>
+         <enumeration value="Papkeszi"/>
+         <enumeration value="Pápoc"/>
+         <enumeration value="Papos"/>
+         <enumeration value="Páprád"/>
+         <enumeration value="Parád"/>
+         <enumeration value="Parádsasvár"/>
+         <enumeration value="Parasznya"/>
+         <enumeration value="Pári"/>
+         <enumeration value="Paszab"/>
+         <enumeration value="Pásztó"/>
+         <enumeration value="Pásztori"/>
+         <enumeration value="Pat"/>
+         <enumeration value="Patak"/>
+         <enumeration value="Patalom"/>
+         <enumeration value="Patapoklosi"/>
+         <enumeration value="Patca"/>
+         <enumeration value="Pátka"/>
+         <enumeration value="Patosfa"/>
+         <enumeration value="Pátroha"/>
+         <enumeration value="Patvarc"/>
+         <enumeration value="Páty"/>
+         <enumeration value="Pátyod"/>
+         <enumeration value="Pázmánd"/>
+         <enumeration value="Pázmándfalu"/>
+         <enumeration value="Pécel"/>
+         <enumeration value="Pecöl"/>
+         <enumeration value="Pécs"/>
+         <enumeration value="Pécsbagota"/>
+         <enumeration value="Pécsdevecser"/>
+         <enumeration value="Pécsely"/>
+         <enumeration value="Pécsudvard"/>
+         <enumeration value="Pécsvárad"/>
+         <enumeration value="Pellérd"/>
+         <enumeration value="Pély"/>
+         <enumeration value="Penc"/>
+         <enumeration value="Penészlek"/>
+         <enumeration value="Pénzesgyőr"/>
+         <enumeration value="Penyige"/>
+         <enumeration value="Pér"/>
+         <enumeration value="Perbál"/>
+         <enumeration value="Pere"/>
+         <enumeration value="Perecse"/>
+         <enumeration value="Pereked"/>
+         <enumeration value="Perenye"/>
+         <enumeration value="Peresznye"/>
+         <enumeration value="Pereszteg"/>
+         <enumeration value="Perkáta"/>
+         <enumeration value="Perkupa"/>
+         <enumeration value="Perőcsény"/>
+         <enumeration value="Peterd"/>
+         <enumeration value="Péterhida"/>
+         <enumeration value="Péteri"/>
+         <enumeration value="Pétervására"/>
+         <enumeration value="Pétfürdő"/>
+         <enumeration value="Pethőhenye"/>
+         <enumeration value="Petneháza"/>
+         <enumeration value="Petőfibánya"/>
+         <enumeration value="Petőfiszállás"/>
+         <enumeration value="Petőháza"/>
+         <enumeration value="Petőmihályfa"/>
+         <enumeration value="Petrikeresztúr"/>
+         <enumeration value="Petrivente"/>
+         <enumeration value="Pettend"/>
+         <enumeration value="Piliny"/>
+         <enumeration value="Pilis"/>
+         <enumeration value="Pilisborosjenő"/>
+         <enumeration value="Piliscsaba"/>
+         <enumeration value="Piliscsév"/>
+         <enumeration value="Pilisjászfalu"/>
+         <enumeration value="Pilismarót"/>
+         <enumeration value="Pilisvörösvár"/>
+         <enumeration value="Pilisszántó"/>
+         <enumeration value="Pilisszentiván"/>
+         <enumeration value="Pilisszentkereszt"/>
+         <enumeration value="Pilisszentlászló"/>
+         <enumeration value="Pincehely"/>
+         <enumeration value="Pinkamindszent"/>
+         <enumeration value="Pinnye"/>
+         <enumeration value="Piricse"/>
+         <enumeration value="Pirtó"/>
+         <enumeration value="Piskó"/>
+         <enumeration value="Pitvaros"/>
+         <enumeration value="Pócsa"/>
+         <enumeration value="Pocsaj"/>
+         <enumeration value="Pócsmegyer"/>
+         <enumeration value="Pócspetri"/>
+         <enumeration value="Pogány"/>
+         <enumeration value="Pogányszentpéter"/>
+         <enumeration value="Pókaszepetk"/>
+         <enumeration value="Polány"/>
+         <enumeration value="Polgár"/>
+         <enumeration value="Polgárdi"/>
+         <enumeration value="Pomáz"/>
+         <enumeration value="Porcsalma"/>
+         <enumeration value="Pornóapáti"/>
+         <enumeration value="Poroszló"/>
+         <enumeration value="Porpác"/>
+         <enumeration value="Porrog"/>
+         <enumeration value="Porrogszentkirály"/>
+         <enumeration value="Porrogszentpál"/>
+         <enumeration value="Pórszombat"/>
+         <enumeration value="Porva"/>
+         <enumeration value="Pósfa"/>
+         <enumeration value="Potony"/>
+         <enumeration value="Potyond"/>
+         <enumeration value="Pölöske"/>
+         <enumeration value="Pölöskefő"/>
+         <enumeration value="Pörböly"/>
+         <enumeration value="Pördefölde"/>
+         <enumeration value="Pötréte"/>
+         <enumeration value="Prügy"/>
+         <enumeration value="Pula"/>
+         <enumeration value="Pusztaapáti"/>
+         <enumeration value="Pusztaberki"/>
+         <enumeration value="Pusztacsalád"/>
+         <enumeration value="Pusztacsó"/>
+         <enumeration value="Pusztadobos"/>
+         <enumeration value="Pusztaederics"/>
+         <enumeration value="Pusztafalu"/>
+         <enumeration value="Pusztaföldvár"/>
+         <enumeration value="Pusztahencse"/>
+         <enumeration value="Pusztakovácsi"/>
+         <enumeration value="Pusztamagyaród"/>
+         <enumeration value="Pusztamérges"/>
+         <enumeration value="Pusztamiske"/>
+         <enumeration value="Pusztamonostor"/>
+         <enumeration value="Pusztaottlaka"/>
+         <enumeration value="Pusztaradvány"/>
+         <enumeration value="Pusztaszabolcs"/>
+         <enumeration value="Pusztaszemes"/>
+         <enumeration value="Pusztaszentlászló"/>
+         <enumeration value="Pusztaszer"/>
+         <enumeration value="Pusztavacs"/>
+         <enumeration value="Pusztavám"/>
+         <enumeration value="Pusztazámor"/>
+         <enumeration value="Putnok"/>
+         <enumeration value="Püski"/>
+         <enumeration value="Püspökhatvan"/>
+         <enumeration value="Püspökladány"/>
+         <enumeration value="Püspökmolnári"/>
+         <enumeration value="Püspökszilágy"/>
+         <enumeration value="Rábacsanak"/>
+         <enumeration value="Rábacsécsény"/>
+         <enumeration value="Rábagyarmat"/>
+         <enumeration value="Rábahídvég"/>
+         <enumeration value="Rábakecöl"/>
+         <enumeration value="Rábapatona"/>
+         <enumeration value="Rábapaty"/>
+         <enumeration value="Rábapordány"/>
+         <enumeration value="Rábasebes"/>
+         <enumeration value="Rábaszentandrás"/>
+         <enumeration value="Rábaszentmihály"/>
+         <enumeration value="Rábaszentmiklós"/>
+         <enumeration value="Rábatamási"/>
+         <enumeration value="Rábatöttös"/>
+         <enumeration value="Rábcakapi"/>
+         <enumeration value="Rácalmás"/>
+         <enumeration value="Ráckeresztúr"/>
+         <enumeration value="Ráckeve"/>
+         <enumeration value="Rád"/>
+         <enumeration value="Rádfalva"/>
+         <enumeration value="Rádóckölked"/>
+         <enumeration value="Radostyán"/>
+         <enumeration value="Ragály"/>
+         <enumeration value="Rajka"/>
+         <enumeration value="Rakaca"/>
+         <enumeration value="Rakacaszend"/>
+         <enumeration value="Rakamaz"/>
+         <enumeration value="Rákóczibánya"/>
+         <enumeration value="Rákóczifalva"/>
+         <enumeration value="Rákócziújfalu"/>
+         <enumeration value="Ráksi"/>
+         <enumeration value="Ramocsa"/>
+         <enumeration value="Ramocsaháza"/>
+         <enumeration value="Rápolt"/>
+         <enumeration value="Raposka"/>
+         <enumeration value="Rásonysápberencs"/>
+         <enumeration value="Rátka"/>
+         <enumeration value="Rátót"/>
+         <enumeration value="Ravazd"/>
+         <enumeration value="Recsk"/>
+         <enumeration value="Réde"/>
+         <enumeration value="Rédics"/>
+         <enumeration value="Regéc"/>
+         <enumeration value="Regenye"/>
+         <enumeration value="Regöly"/>
+         <enumeration value="Rém"/>
+         <enumeration value="Remeteszőlős"/>
+         <enumeration value="Répáshuta"/>
+         <enumeration value="Répcelak"/>
+         <enumeration value="Répceszemere"/>
+         <enumeration value="Répceszentgyörgy"/>
+         <enumeration value="Répcevis"/>
+         <enumeration value="Resznek"/>
+         <enumeration value="Rétalap"/>
+         <enumeration value="Rétközberencs"/>
+         <enumeration value="Rétság"/>
+         <enumeration value="Révfülöp"/>
+         <enumeration value="Révleányvár"/>
+         <enumeration value="Rezi"/>
+         <enumeration value="Ricse"/>
+         <enumeration value="Rigács"/>
+         <enumeration value="Rigyác"/>
+         <enumeration value="Rimóc"/>
+         <enumeration value="Rinyabesenyő"/>
+         <enumeration value="Rinyakovácsi"/>
+         <enumeration value="Rinyaszentkirály"/>
+         <enumeration value="Rinyaújlak"/>
+         <enumeration value="Rinyaújnép"/>
+         <enumeration value="Rohod"/>
+         <enumeration value="Románd"/>
+         <enumeration value="Romhány"/>
+         <enumeration value="Romonya"/>
+         <enumeration value="Rózsafa"/>
+         <enumeration value="Rozsály"/>
+         <enumeration value="Rózsaszentmárton"/>
+         <enumeration value="Röjtökmuzsaj"/>
+         <enumeration value="Rönök"/>
+         <enumeration value="Röszke"/>
+         <enumeration value="Rudabánya"/>
+         <enumeration value="Rudolftelep"/>
+         <enumeration value="Rum"/>
+         <enumeration value="Ruzsa"/>
+         <enumeration value="Ságújfalu"/>
+         <enumeration value="Ságvár"/>
+         <enumeration value="Sajóbábony"/>
+         <enumeration value="Sajóecseg"/>
+         <enumeration value="Sajógalgóc"/>
+         <enumeration value="Sajóhídvég"/>
+         <enumeration value="Sajóivánka"/>
+         <enumeration value="Sajókápolna"/>
+         <enumeration value="Sajókaza"/>
+         <enumeration value="Sajókeresztúr"/>
+         <enumeration value="Sajólád"/>
+         <enumeration value="Sajólászlófalva"/>
+         <enumeration value="Sajómercse"/>
+         <enumeration value="Sajónémeti"/>
+         <enumeration value="Sajóörös"/>
+         <enumeration value="Sajópálfala"/>
+         <enumeration value="Sajópetri"/>
+         <enumeration value="Sajópüspöki"/>
+         <enumeration value="Sajósenye"/>
+         <enumeration value="Sajószentpéter"/>
+         <enumeration value="Sajószöged"/>
+         <enumeration value="Sajóvámos"/>
+         <enumeration value="Sajóvelezd"/>
+         <enumeration value="Sajtoskál"/>
+         <enumeration value="Salföld"/>
+         <enumeration value="Salgótarján"/>
+         <enumeration value="Salköveskút"/>
+         <enumeration value="Salomvár"/>
+         <enumeration value="Sály"/>
+         <enumeration value="Sámod"/>
+         <enumeration value="Sámsonháza"/>
+         <enumeration value="Sand"/>
+         <enumeration value="Sándorfalva"/>
+         <enumeration value="Sántos"/>
+         <enumeration value="Sáp"/>
+         <enumeration value="Sáránd"/>
+         <enumeration value="Sárazsadány"/>
+         <enumeration value="Sárbogárd"/>
+         <enumeration value="Sáregres"/>
+         <enumeration value="Sárfimizdó"/>
+         <enumeration value="Sárhida"/>
+         <enumeration value="Sárisáp"/>
+         <enumeration value="Sarkad"/>
+         <enumeration value="Sarkadkeresztúr"/>
+         <enumeration value="Sárkeresztes"/>
+         <enumeration value="Sárkeresztúr"/>
+         <enumeration value="Sárkeszi"/>
+         <enumeration value="Sármellék"/>
+         <enumeration value="Sárok"/>
+         <enumeration value="Sárosd"/>
+         <enumeration value="Sárospatak"/>
+         <enumeration value="Sárpilis"/>
+         <enumeration value="Sárrétudvari"/>
+         <enumeration value="Sarród"/>
+         <enumeration value="Sárszentágota"/>
+         <enumeration value="Sárszentlőrinc"/>
+         <enumeration value="Sárszentmihály"/>
+         <enumeration value="Sarud"/>
+         <enumeration value="Sárvár"/>
+         <enumeration value="Sásd"/>
+         <enumeration value="Sáska"/>
+         <enumeration value="Sáta"/>
+         <enumeration value="Sátoraljaújhely"/>
+         <enumeration value="Sátorhely"/>
+         <enumeration value="Sávoly"/>
+         <enumeration value="Sé"/>
+         <enumeration value="Segesd"/>
+         <enumeration value="Selyeb"/>
+         <enumeration value="Sellye"/>
+         <enumeration value="Semjén"/>
+         <enumeration value="Semjénháza"/>
+         <enumeration value="Sénye"/>
+         <enumeration value="Sényő"/>
+         <enumeration value="Seregélyes"/>
+         <enumeration value="Serényfalva"/>
+         <enumeration value="Sérsekszőlős"/>
+         <enumeration value="Sikátor"/>
+         <enumeration value="Siklós"/>
+         <enumeration value="Siklósbodony"/>
+         <enumeration value="Siklósnagyfalu"/>
+         <enumeration value="Sima"/>
+         <enumeration value="Simaság"/>
+         <enumeration value="Simonfa"/>
+         <enumeration value="Simontornya"/>
+         <enumeration value="Sióagárd"/>
+         <enumeration value="Siófok"/>
+         <enumeration value="Siójut"/>
+         <enumeration value="Sirok"/>
+         <enumeration value="Sitke"/>
+         <enumeration value="Sobor"/>
+         <enumeration value="Sokorópátka"/>
+         <enumeration value="Solt"/>
+         <enumeration value="Soltszentimre"/>
+         <enumeration value="Soltvadkert"/>
+         <enumeration value="Sóly"/>
+         <enumeration value="Solymár"/>
+         <enumeration value="Som"/>
+         <enumeration value="Somberek"/>
+         <enumeration value="Somlójenő"/>
+         <enumeration value="Somlószőlős"/>
+         <enumeration value="Somlóvásárhely"/>
+         <enumeration value="Somlóvecse"/>
+         <enumeration value="Somodor"/>
+         <enumeration value="Somogyacsa"/>
+         <enumeration value="Somogyapáti"/>
+         <enumeration value="Somogyaracs"/>
+         <enumeration value="Somogyaszaló"/>
+         <enumeration value="Somogybabod"/>
+         <enumeration value="Somogybükkösd"/>
+         <enumeration value="Somogycsicsó"/>
+         <enumeration value="Somogydöröcske"/>
+         <enumeration value="Somogyegres"/>
+         <enumeration value="Somogyfajsz"/>
+         <enumeration value="Somogygeszti"/>
+         <enumeration value="Somogyhárságy"/>
+         <enumeration value="Somogyhatvan"/>
+         <enumeration value="Somogyjád"/>
+         <enumeration value="Somogymeggyes"/>
+         <enumeration value="Somogysámson"/>
+         <enumeration value="Somogysárd"/>
+         <enumeration value="Somogysimonyi"/>
+         <enumeration value="Somogyszentpál"/>
+         <enumeration value="Somogyszil"/>
+         <enumeration value="Somogyszob"/>
+         <enumeration value="Somogytúr"/>
+         <enumeration value="Somogyudvarhely"/>
+         <enumeration value="Somogyvámos"/>
+         <enumeration value="Somogyvár"/>
+         <enumeration value="Somogyviszló"/>
+         <enumeration value="Somogyzsitfa"/>
+         <enumeration value="Somoskőújfalu"/>
+         <enumeration value="Sonkád"/>
+         <enumeration value="Soponya"/>
+         <enumeration value="Sopron"/>
+         <enumeration value="Sopronhorpács"/>
+         <enumeration value="Sopronkövesd"/>
+         <enumeration value="Sopronnémeti"/>
+         <enumeration value="Sorkifalud"/>
+         <enumeration value="Sorkikápolna"/>
+         <enumeration value="Sormás"/>
+         <enumeration value="Sorokpolány"/>
+         <enumeration value="Sóshartyán"/>
+         <enumeration value="Sóskút"/>
+         <enumeration value="Sóstófalva"/>
+         <enumeration value="Sósvertike"/>
+         <enumeration value="Sótony"/>
+         <enumeration value="Söjtör"/>
+         <enumeration value="Söpte"/>
+         <enumeration value="Söréd"/>
+         <enumeration value="Sukoró"/>
+         <enumeration value="Sumony"/>
+         <enumeration value="Súr"/>
+         <enumeration value="Surd"/>
+         <enumeration value="Sükösd"/>
+         <enumeration value="Sülysáp"/>
+         <enumeration value="Sümeg"/>
+         <enumeration value="Sümegcsehi"/>
+         <enumeration value="Sümegprága"/>
+         <enumeration value="Süttő"/>
+         <enumeration value="Szabadbattyán"/>
+         <enumeration value="Szabadegyháza"/>
+         <enumeration value="Szabadhídvég"/>
+         <enumeration value="Szabadi"/>
+         <enumeration value="Szabadkígyós"/>
+         <enumeration value="Szabadszállás"/>
+         <enumeration value="Szabadszentkirály"/>
+         <enumeration value="Szabás"/>
+         <enumeration value="Szabolcs"/>
+         <enumeration value="Szabolcsbáka"/>
+         <enumeration value="Szabolcsveresmart"/>
+         <enumeration value="Szada"/>
+         <enumeration value="Szágy"/>
+         <enumeration value="Szajk"/>
+         <enumeration value="Szajla"/>
+         <enumeration value="Szajol"/>
+         <enumeration value="Szakácsi"/>
+         <enumeration value="Szakadát"/>
+         <enumeration value="Szakáld"/>
+         <enumeration value="Szakály"/>
+         <enumeration value="Szakcs"/>
+         <enumeration value="Szakmár"/>
+         <enumeration value="Szaknyér"/>
+         <enumeration value="Szakoly"/>
+         <enumeration value="Szakony"/>
+         <enumeration value="Szakonyfalu"/>
+         <enumeration value="Szákszend"/>
+         <enumeration value="Szalafő"/>
+         <enumeration value="Szalánta"/>
+         <enumeration value="Szalapa"/>
+         <enumeration value="Szalaszend"/>
+         <enumeration value="Szalatnak"/>
+         <enumeration value="Szálka"/>
+         <enumeration value="Szalkszentmárton"/>
+         <enumeration value="Szalmatercs"/>
+         <enumeration value="Szalonna"/>
+         <enumeration value="Szamosangyalos"/>
+         <enumeration value="Szamosbecs"/>
+         <enumeration value="Szamoskér"/>
+         <enumeration value="Szamossályi"/>
+         <enumeration value="Szamostatárfalva"/>
+         <enumeration value="Szamosújlak"/>
+         <enumeration value="Szamosszeg"/>
+         <enumeration value="Szanda"/>
+         <enumeration value="Szank"/>
+         <enumeration value="Szántód"/>
+         <enumeration value="Szany"/>
+         <enumeration value="Szápár"/>
+         <enumeration value="Szaporca"/>
+         <enumeration value="Szár"/>
+         <enumeration value="Szárász"/>
+         <enumeration value="Szárazd"/>
+         <enumeration value="Szárföld"/>
+         <enumeration value="Szárliget"/>
+         <enumeration value="Szarvas"/>
+         <enumeration value="Szarvasgede"/>
+         <enumeration value="Szarvaskend"/>
+         <enumeration value="Szarvaskő"/>
+         <enumeration value="Szászberek"/>
+         <enumeration value="Szászfa"/>
+         <enumeration value="Szászvár"/>
+         <enumeration value="Szatmárcseke"/>
+         <enumeration value="Szátok"/>
+         <enumeration value="Szatta"/>
+         <enumeration value="Szatymaz"/>
+         <enumeration value="Szava"/>
+         <enumeration value="Százhalombatta"/>
+         <enumeration value="Szebény"/>
+         <enumeration value="Szécsénke"/>
+         <enumeration value="Szécsény"/>
+         <enumeration value="Szécsényfelfalu"/>
+         <enumeration value="Szécsisziget"/>
+         <enumeration value="Szederkény"/>
+         <enumeration value="Szedres"/>
+         <enumeration value="Szeged"/>
+         <enumeration value="Szegerdő"/>
+         <enumeration value="Szeghalom"/>
+         <enumeration value="Szegi"/>
+         <enumeration value="Szegilong"/>
+         <enumeration value="Szegvár"/>
+         <enumeration value="Székely"/>
+         <enumeration value="Székelyszabar"/>
+         <enumeration value="Székesfehérvár"/>
+         <enumeration value="Székkutas"/>
+         <enumeration value="Szekszárd"/>
+         <enumeration value="Szeleste"/>
+         <enumeration value="Szelevény"/>
+         <enumeration value="Szellő"/>
+         <enumeration value="Szemely"/>
+         <enumeration value="Szemenye"/>
+         <enumeration value="Szemere"/>
+         <enumeration value="Szendehely"/>
+         <enumeration value="Szendrő"/>
+         <enumeration value="Szendrőlád"/>
+         <enumeration value="Szenna"/>
+         <enumeration value="Szenta"/>
+         <enumeration value="Szentantalfa"/>
+         <enumeration value="Szentbalázs"/>
+         <enumeration value="Szentbékkálla"/>
+         <enumeration value="Szentborbás"/>
+         <enumeration value="Szentdénes"/>
+         <enumeration value="Szentdomonkos"/>
+         <enumeration value="Szente"/>
+         <enumeration value="Szentegát"/>
+         <enumeration value="Szentendre"/>
+         <enumeration value="Szentes"/>
+         <enumeration value="Szentgál"/>
+         <enumeration value="Szentgáloskér"/>
+         <enumeration value="Szentgotthárd"/>
+         <enumeration value="Szentgyörgyvár"/>
+         <enumeration value="Szentgyörgyvölgy"/>
+         <enumeration value="Szentimrefalva"/>
+         <enumeration value="Szentistván"/>
+         <enumeration value="Szentistvánbaksa"/>
+         <enumeration value="Szentjakabfa"/>
+         <enumeration value="Szentkatalin"/>
+         <enumeration value="Szentkirály"/>
+         <enumeration value="Szentkirályszabadja"/>
+         <enumeration value="Szentkozmadombja"/>
+         <enumeration value="Szentlászló"/>
+         <enumeration value="Szentliszló"/>
+         <enumeration value="Szentlőrinc"/>
+         <enumeration value="Szentlőrinckáta"/>
+         <enumeration value="Szentmargitfalva"/>
+         <enumeration value="Szentmártonkáta"/>
+         <enumeration value="Szentpéterfa"/>
+         <enumeration value="Szentpéterfölde"/>
+         <enumeration value="Szentpéterszeg"/>
+         <enumeration value="Szentpéterúr"/>
+         <enumeration value="Szenyér"/>
+         <enumeration value="Szepetnek"/>
+         <enumeration value="Szerecseny"/>
+         <enumeration value="Szeremle"/>
+         <enumeration value="Szerencs"/>
+         <enumeration value="Szerep"/>
+         <enumeration value="Szergény"/>
+         <enumeration value="Szigetbecse"/>
+         <enumeration value="Szigetcsép"/>
+         <enumeration value="Szigethalom"/>
+         <enumeration value="Szigetmonostor"/>
+         <enumeration value="Szigetszentmárton"/>
+         <enumeration value="Szigetszentmiklós"/>
+         <enumeration value="Szigetújfalu"/>
+         <enumeration value="Szigetvár"/>
+         <enumeration value="Szigliget"/>
+         <enumeration value="Szihalom"/>
+         <enumeration value="Szijártóháza"/>
+         <enumeration value="Szikszó"/>
+         <enumeration value="Szil"/>
+         <enumeration value="Szilágy"/>
+         <enumeration value="Szilaspogony"/>
+         <enumeration value="Szilsárkány"/>
+         <enumeration value="Szilvágy"/>
+         <enumeration value="Szilvás"/>
+         <enumeration value="Szilvásvárad"/>
+         <enumeration value="Szilvásszentmárton"/>
+         <enumeration value="Szin"/>
+         <enumeration value="Szinpetri"/>
+         <enumeration value="Szirák"/>
+         <enumeration value="Szirmabesenyő"/>
+         <enumeration value="Szob"/>
+         <enumeration value="Szokolya"/>
+         <enumeration value="Szólád"/>
+         <enumeration value="Szolnok"/>
+         <enumeration value="Szombathely"/>
+         <enumeration value="Szomód"/>
+         <enumeration value="Szomolya"/>
+         <enumeration value="Szomor"/>
+         <enumeration value="Szorgalmatos"/>
+         <enumeration value="Szorosad"/>
+         <enumeration value="Szőc"/>
+         <enumeration value="Szőce"/>
+         <enumeration value="Sződ"/>
+         <enumeration value="Sződliget"/>
+         <enumeration value="Szögliget"/>
+         <enumeration value="Szőke"/>
+         <enumeration value="Szőkéd"/>
+         <enumeration value="Szőkedencs"/>
+         <enumeration value="Szőlősardó"/>
+         <enumeration value="Szőlősgyörök"/>
+         <enumeration value="Szörény"/>
+         <enumeration value="Szúcs"/>
+         <enumeration value="Szuha"/>
+         <enumeration value="Szuhafő"/>
+         <enumeration value="Szuhakálló"/>
+         <enumeration value="Szuhogy"/>
+         <enumeration value="Szulimán"/>
+         <enumeration value="Szulok"/>
+         <enumeration value="Szurdokpüspöki"/>
+         <enumeration value="Szűcsi"/>
+         <enumeration value="Szügy"/>
+         <enumeration value="Szűr"/>
+         <enumeration value="Tab"/>
+         <enumeration value="Tabajd"/>
+         <enumeration value="Tabdi"/>
+         <enumeration value="Táborfalva"/>
+         <enumeration value="Tác"/>
+         <enumeration value="Tagyon"/>
+         <enumeration value="Tahitótfalu"/>
+         <enumeration value="Takácsi"/>
+         <enumeration value="Tákos"/>
+         <enumeration value="Taksony"/>
+         <enumeration value="Taktabáj"/>
+         <enumeration value="Taktaharkány"/>
+         <enumeration value="Taktakenéz"/>
+         <enumeration value="Taktaszada"/>
+         <enumeration value="Taliándörögd"/>
+         <enumeration value="Tállya"/>
+         <enumeration value="Tamási"/>
+         <enumeration value="Tanakajd"/>
+         <enumeration value="Táp"/>
+         <enumeration value="Tápióbicske"/>
+         <enumeration value="Tápiógyörgye"/>
+         <enumeration value="Tápióság"/>
+         <enumeration value="Tápiószecső"/>
+         <enumeration value="Tápiószele"/>
+         <enumeration value="Tápiószentmárton"/>
+         <enumeration value="Tápiószőlős"/>
+         <enumeration value="Táplánszentkereszt"/>
+         <enumeration value="Tapolca"/>
+         <enumeration value="Tapsony"/>
+         <enumeration value="Tápszentmiklós"/>
+         <enumeration value="Tar"/>
+         <enumeration value="Tarany"/>
+         <enumeration value="Tarcal"/>
+         <enumeration value="Tard"/>
+         <enumeration value="Tardona"/>
+         <enumeration value="Tardos"/>
+         <enumeration value="Tarhos"/>
+         <enumeration value="Tarján"/>
+         <enumeration value="Tarjánpuszta"/>
+         <enumeration value="Tárkány"/>
+         <enumeration value="Tarnabod"/>
+         <enumeration value="Tarnalelesz"/>
+         <enumeration value="Tarnaméra"/>
+         <enumeration value="Tarnaörs"/>
+         <enumeration value="Tarnaszentmária"/>
+         <enumeration value="Tarnaszentmiklós"/>
+         <enumeration value="Tarnazsadány"/>
+         <enumeration value="Tárnok"/>
+         <enumeration value="Tárnokréti"/>
+         <enumeration value="Tarpa"/>
+         <enumeration value="Tarrós"/>
+         <enumeration value="Táska"/>
+         <enumeration value="Tass"/>
+         <enumeration value="Taszár"/>
+         <enumeration value="Tát"/>
+         <enumeration value="Tata"/>
+         <enumeration value="Tatabánya"/>
+         <enumeration value="Tataháza"/>
+         <enumeration value="Tatárszentgyörgy"/>
+         <enumeration value="Tázlár"/>
+         <enumeration value="Téglás"/>
+         <enumeration value="Tekenye"/>
+         <enumeration value="Tékes"/>
+         <enumeration value="Teklafalu"/>
+         <enumeration value="Telekes"/>
+         <enumeration value="Telekgerendás"/>
+         <enumeration value="Teleki"/>
+         <enumeration value="Telki"/>
+         <enumeration value="Telkibánya"/>
+         <enumeration value="Tengelic"/>
+         <enumeration value="Tengeri"/>
+         <enumeration value="Tengőd"/>
+         <enumeration value="Tenk"/>
+         <enumeration value="Tényő"/>
+         <enumeration value="Tépe"/>
+         <enumeration value="Terem"/>
+         <enumeration value="Terény"/>
+         <enumeration value="Tereske"/>
+         <enumeration value="Teresztenye"/>
+         <enumeration value="Terpes"/>
+         <enumeration value="Tés"/>
+         <enumeration value="Tésa"/>
+         <enumeration value="Tésenfa"/>
+         <enumeration value="Téseny"/>
+         <enumeration value="Teskánd"/>
+         <enumeration value="Tét"/>
+         <enumeration value="Tetétlen"/>
+         <enumeration value="Tevel"/>
+         <enumeration value="Tibolddaróc"/>
+         <enumeration value="Tiborszállás"/>
+         <enumeration value="Tihany"/>
+         <enumeration value="Tikos"/>
+         <enumeration value="Tilaj"/>
+         <enumeration value="Timár"/>
+         <enumeration value="Tinnye"/>
+         <enumeration value="Tiszaadony"/>
+         <enumeration value="Tiszaalpár"/>
+         <enumeration value="Tiszabábolna"/>
+         <enumeration value="Tiszabecs"/>
+         <enumeration value="Tiszabercel"/>
+         <enumeration value="Tiszabezdéd"/>
+         <enumeration value="Tiszabő"/>
+         <enumeration value="Tiszabura"/>
+         <enumeration value="Tiszacsécse"/>
+         <enumeration value="Tiszacsege"/>
+         <enumeration value="Tiszacsermely"/>
+         <enumeration value="Tiszadada"/>
+         <enumeration value="Tiszaderzs"/>
+         <enumeration value="Tiszadob"/>
+         <enumeration value="Tiszadorogma"/>
+         <enumeration value="Tiszaeszlár"/>
+         <enumeration value="Tiszaföldvár"/>
+         <enumeration value="Tiszafüred"/>
+         <enumeration value="Tiszagyenda"/>
+         <enumeration value="Tiszagyulaháza"/>
+         <enumeration value="Tiszaigar"/>
+         <enumeration value="Tiszainoka"/>
+         <enumeration value="Tiszajenő"/>
+         <enumeration value="Tiszakanyár"/>
+         <enumeration value="Tiszakarád"/>
+         <enumeration value="Tiszakécske"/>
+         <enumeration value="Tiszakerecseny"/>
+         <enumeration value="Tiszakeszi"/>
+         <enumeration value="Tiszakóród"/>
+         <enumeration value="Tiszakürt"/>
+         <enumeration value="Tiszaladány"/>
+         <enumeration value="Tiszalök"/>
+         <enumeration value="Tiszalúc"/>
+         <enumeration value="Tiszamogyorós"/>
+         <enumeration value="Tiszanagyfalu"/>
+         <enumeration value="Tiszanána"/>
+         <enumeration value="Tiszaörs"/>
+         <enumeration value="Tiszapalkonya"/>
+         <enumeration value="Tiszapüspöki"/>
+         <enumeration value="Tiszarád"/>
+         <enumeration value="Tiszaroff"/>
+         <enumeration value="Tiszasas"/>
+         <enumeration value="Tiszasüly"/>
+         <enumeration value="Tiszaszalka"/>
+         <enumeration value="Tiszaszentimre"/>
+         <enumeration value="Tiszaszentmárton"/>
+         <enumeration value="Tiszasziget"/>
+         <enumeration value="Tiszaszőlős"/>
+         <enumeration value="Tiszatardos"/>
+         <enumeration value="Tiszatarján"/>
+         <enumeration value="Tiszatelek"/>
+         <enumeration value="Tiszatenyő"/>
+         <enumeration value="Tiszaug"/>
+         <enumeration value="Tiszaújváros"/>
+         <enumeration value="Tiszavalk"/>
+         <enumeration value="Tiszavárkony"/>
+         <enumeration value="Tiszavasvári"/>
+         <enumeration value="Tiszavid"/>
+         <enumeration value="Tisztaberek"/>
+         <enumeration value="Tivadar"/>
+         <enumeration value="Tóalmás"/>
+         <enumeration value="Tófalu"/>
+         <enumeration value="Tófej"/>
+         <enumeration value="Tófű"/>
+         <enumeration value="Tokaj"/>
+         <enumeration value="Tokod"/>
+         <enumeration value="Tokodaltáró"/>
+         <enumeration value="Tokorcs"/>
+         <enumeration value="Tolcsva"/>
+         <enumeration value="Told"/>
+         <enumeration value="Tolmács"/>
+         <enumeration value="Tolna"/>
+         <enumeration value="Tolnanémedi"/>
+         <enumeration value="Tomajmonostora"/>
+         <enumeration value="Tomor"/>
+         <enumeration value="Tompa"/>
+         <enumeration value="Tompaládony"/>
+         <enumeration value="Tordas"/>
+         <enumeration value="Tormafölde"/>
+         <enumeration value="Tormás"/>
+         <enumeration value="Tormásliget"/>
+         <enumeration value="Tornabarakony"/>
+         <enumeration value="Tornakápolna"/>
+         <enumeration value="Tornanádaska"/>
+         <enumeration value="Tornaszentandrás"/>
+         <enumeration value="Tornaszentjakab"/>
+         <enumeration value="Tornyiszentmiklós"/>
+         <enumeration value="Tornyosnémeti"/>
+         <enumeration value="Tornyospálca"/>
+         <enumeration value="Torony"/>
+         <enumeration value="Torvaj"/>
+         <enumeration value="Tószeg"/>
+         <enumeration value="Tótkomlós"/>
+         <enumeration value="Tótszentgyörgy"/>
+         <enumeration value="Tótszentmárton"/>
+         <enumeration value="Tótszerdahely"/>
+         <enumeration value="Tótújfalu"/>
+         <enumeration value="Tótvázsony"/>
+         <enumeration value="Tök"/>
+         <enumeration value="Tököl"/>
+         <enumeration value="Töltéstava"/>
+         <enumeration value="Tömörd"/>
+         <enumeration value="Tömörkény"/>
+         <enumeration value="Törökbálint"/>
+         <enumeration value="Törökkoppány"/>
+         <enumeration value="Törökszentmiklós"/>
+         <enumeration value="Törtel"/>
+         <enumeration value="Töttös"/>
+         <enumeration value="Trizs"/>
+         <enumeration value="Tunyogmatolcs"/>
+         <enumeration value="Tura"/>
+         <enumeration value="Túristvándi"/>
+         <enumeration value="Túrkeve"/>
+         <enumeration value="Túrony"/>
+         <enumeration value="Túrricse"/>
+         <enumeration value="Tuzsér"/>
+         <enumeration value="Türje"/>
+         <enumeration value="Tüskevár"/>
+         <enumeration value="Tyukod"/>
+         <enumeration value="Udvar"/>
+         <enumeration value="Udvari"/>
+         <enumeration value="Ugod"/>
+         <enumeration value="Újbarok"/>
+         <enumeration value="Újcsanálos"/>
+         <enumeration value="Újdombrád"/>
+         <enumeration value="Újfehértó"/>
+         <enumeration value="Újhartyán"/>
+         <enumeration value="Újiráz"/>
+         <enumeration value="Újireg"/>
+         <enumeration value="Újkenéz"/>
+         <enumeration value="Újkér"/>
+         <enumeration value="Újkígyós"/>
+         <enumeration value="Újlengyel"/>
+         <enumeration value="Újléta"/>
+         <enumeration value="Újlőrincfalva"/>
+         <enumeration value="Újpetre"/>
+         <enumeration value="Újrónafő"/>
+         <enumeration value="Újsolt"/>
+         <enumeration value="Újszalonta"/>
+         <enumeration value="Újszász"/>
+         <enumeration value="Újszentiván"/>
+         <enumeration value="Újszentmargita"/>
+         <enumeration value="Újszilvás"/>
+         <enumeration value="Újtelek"/>
+         <enumeration value="Újtikos"/>
+         <enumeration value="Újudvar"/>
+         <enumeration value="Újvárfalva"/>
+         <enumeration value="Ukk"/>
+         <enumeration value="Und"/>
+         <enumeration value="Úny"/>
+         <enumeration value="Uppony"/>
+         <enumeration value="Ura"/>
+         <enumeration value="Uraiújfalu"/>
+         <enumeration value="Úrhida"/>
+         <enumeration value="Úri"/>
+         <enumeration value="Úrkút"/>
+         <enumeration value="Uszka"/>
+         <enumeration value="Uszód"/>
+         <enumeration value="Uzsa"/>
+         <enumeration value="Üllés"/>
+         <enumeration value="Üllő"/>
+         <enumeration value="Üröm"/>
+         <enumeration value="Vác"/>
+         <enumeration value="Vácduka"/>
+         <enumeration value="Vácegres"/>
+         <enumeration value="Váchartyán"/>
+         <enumeration value="Váckisújfalu"/>
+         <enumeration value="Vácrátót"/>
+         <enumeration value="Vácszentlászló"/>
+         <enumeration value="Vadna"/>
+         <enumeration value="Vadosfa"/>
+         <enumeration value="Vág"/>
+         <enumeration value="Vágáshuta"/>
+         <enumeration value="Vaja"/>
+         <enumeration value="Vajdácska"/>
+         <enumeration value="Vajszló"/>
+         <enumeration value="Vajta"/>
+         <enumeration value="Vál"/>
+         <enumeration value="Valkó"/>
+         <enumeration value="Valkonya"/>
+         <enumeration value="Vállaj"/>
+         <enumeration value="Vállus"/>
+         <enumeration value="Vámosatya"/>
+         <enumeration value="Vámoscsalád"/>
+         <enumeration value="Vámosgyörk"/>
+         <enumeration value="Vámosmikola"/>
+         <enumeration value="Vámosoroszi"/>
+         <enumeration value="Vámospércs"/>
+         <enumeration value="Vámosújfalu"/>
+         <enumeration value="Vámosszabadi"/>
+         <enumeration value="Váncsod"/>
+         <enumeration value="Vanyarc"/>
+         <enumeration value="Vanyola"/>
+         <enumeration value="Várad"/>
+         <enumeration value="Váralja"/>
+         <enumeration value="Varászló"/>
+         <enumeration value="Váraszó"/>
+         <enumeration value="Várbalog"/>
+         <enumeration value="Varbó"/>
+         <enumeration value="Varbóc"/>
+         <enumeration value="Várda"/>
+         <enumeration value="Várdomb"/>
+         <enumeration value="Várfölde"/>
+         <enumeration value="Varga"/>
+         <enumeration value="Várgesztes"/>
+         <enumeration value="Várkesző"/>
+         <enumeration value="Várong"/>
+         <enumeration value="Városföld"/>
+         <enumeration value="Városlőd"/>
+         <enumeration value="Várpalota"/>
+         <enumeration value="Varsád"/>
+         <enumeration value="Varsány"/>
+         <enumeration value="Várvölgy"/>
+         <enumeration value="Vasad"/>
+         <enumeration value="Vasalja"/>
+         <enumeration value="Vásárosbéc"/>
+         <enumeration value="Vásárosdombó"/>
+         <enumeration value="Vásárosfalu"/>
+         <enumeration value="Vásárosmiske"/>
+         <enumeration value="Vásárosnamény"/>
+         <enumeration value="Vasasszonyfa"/>
+         <enumeration value="Vasboldogasszony"/>
+         <enumeration value="Vasegerszeg"/>
+         <enumeration value="Vashosszúfalu"/>
+         <enumeration value="Vaskeresztes"/>
+         <enumeration value="Vaskút"/>
+         <enumeration value="Vasmegyer"/>
+         <enumeration value="Vaspör"/>
+         <enumeration value="Vassurány"/>
+         <enumeration value="Vasvár"/>
+         <enumeration value="Vaszar"/>
+         <enumeration value="Vászoly"/>
+         <enumeration value="Vasszécseny"/>
+         <enumeration value="Vasszentmihály"/>
+         <enumeration value="Vasszilvágy"/>
+         <enumeration value="Vát"/>
+         <enumeration value="Vatta"/>
+         <enumeration value="Vázsnok"/>
+         <enumeration value="Vécs"/>
+         <enumeration value="Vecsés"/>
+         <enumeration value="Végegyháza"/>
+         <enumeration value="Vejti"/>
+         <enumeration value="Vékény"/>
+         <enumeration value="Vekerd"/>
+         <enumeration value="Velem"/>
+         <enumeration value="Velemér"/>
+         <enumeration value="Velence"/>
+         <enumeration value="Velény"/>
+         <enumeration value="Véménd"/>
+         <enumeration value="Vének"/>
+         <enumeration value="Vép"/>
+         <enumeration value="Vereb"/>
+         <enumeration value="Veresegyház"/>
+         <enumeration value="Verőce"/>
+         <enumeration value="Verpelét"/>
+         <enumeration value="Verseg"/>
+         <enumeration value="Versend"/>
+         <enumeration value="Vértesacsa"/>
+         <enumeration value="Vértesboglár"/>
+         <enumeration value="Vérteskethely"/>
+         <enumeration value="Vértessomló"/>
+         <enumeration value="Vértestolna"/>
+         <enumeration value="Vértesszőlős"/>
+         <enumeration value="Vése"/>
+         <enumeration value="Veszkény"/>
+         <enumeration value="Veszprém"/>
+         <enumeration value="Veszprémfajsz"/>
+         <enumeration value="Veszprémgalsa"/>
+         <enumeration value="Veszprémvarsány"/>
+         <enumeration value="Vésztő"/>
+         <enumeration value="Vezseny"/>
+         <enumeration value="Vid"/>
+         <enumeration value="Vigántpetend"/>
+         <enumeration value="Villány"/>
+         <enumeration value="Villánykövesd"/>
+         <enumeration value="Vilmány"/>
+         <enumeration value="Vilonya"/>
+         <enumeration value="Vilyvitány"/>
+         <enumeration value="Vinár"/>
+         <enumeration value="Vindornyafok"/>
+         <enumeration value="Vindornyalak"/>
+         <enumeration value="Vindornyaszőlős"/>
+         <enumeration value="Visegrád"/>
+         <enumeration value="Visnye"/>
+         <enumeration value="Visonta"/>
+         <enumeration value="Viss"/>
+         <enumeration value="Visz"/>
+         <enumeration value="Viszák"/>
+         <enumeration value="Viszló"/>
+         <enumeration value="Visznek"/>
+         <enumeration value="Vitnyéd"/>
+         <enumeration value="Vízvár"/>
+         <enumeration value="Vizslás"/>
+         <enumeration value="Vizsoly"/>
+         <enumeration value="Vokány"/>
+         <enumeration value="Vonyarcvashegy"/>
+         <enumeration value="Vöckönd"/>
+         <enumeration value="Völcsej"/>
+         <enumeration value="Vönöck"/>
+         <enumeration value="Vöröstó"/>
+         <enumeration value="Vörs"/>
+         <enumeration value="Zabar"/>
+         <enumeration value="Zádor"/>
+         <enumeration value="Zádorfalva"/>
+         <enumeration value="Zagyvarékas"/>
+         <enumeration value="Zagyvaszántó"/>
+         <enumeration value="Záhony"/>
+         <enumeration value="Zajk"/>
+         <enumeration value="Zajta"/>
+         <enumeration value="Zákány"/>
+         <enumeration value="Zákányfalu"/>
+         <enumeration value="Zákányszék"/>
+         <enumeration value="Zala"/>
+         <enumeration value="Zalaapáti"/>
+         <enumeration value="Zalabaksa"/>
+         <enumeration value="Zalabér"/>
+         <enumeration value="Zalaboldogfa"/>
+         <enumeration value="Zalacsány"/>
+         <enumeration value="Zalacséb"/>
+         <enumeration value="Zalaegerszeg"/>
+         <enumeration value="Zalaerdőd"/>
+         <enumeration value="Zalagyömörő"/>
+         <enumeration value="Zalahaláp"/>
+         <enumeration value="Zalaháshágy"/>
+         <enumeration value="Zalaigrice"/>
+         <enumeration value="Zalaistvánd"/>
+         <enumeration value="Zalakaros"/>
+         <enumeration value="Zalakomár"/>
+         <enumeration value="Zalaköveskút"/>
+         <enumeration value="Zalalövő"/>
+         <enumeration value="Zalameggyes"/>
+         <enumeration value="Zalamerenye"/>
+         <enumeration value="Zalasárszeg"/>
+         <enumeration value="Zalaszabar"/>
+         <enumeration value="Zalaszántó"/>
+         <enumeration value="Zalaszegvár"/>
+         <enumeration value="Zalaszentbalázs"/>
+         <enumeration value="Zalaszentgrót"/>
+         <enumeration value="Zalaszentgyörgy"/>
+         <enumeration value="Zalaszentiván"/>
+         <enumeration value="Zalaszentjakab"/>
+         <enumeration value="Zalaszentlászló"/>
+         <enumeration value="Zalaszentlőrinc"/>
+         <enumeration value="Zalaszentmárton"/>
+         <enumeration value="Zalaszentmihály"/>
+         <enumeration value="Zalaszombatfa"/>
+         <enumeration value="Zaláta"/>
+         <enumeration value="Zalatárnok"/>
+         <enumeration value="Zalaújlak"/>
+         <enumeration value="Zalavár"/>
+         <enumeration value="Zalavég"/>
+         <enumeration value="Zalkod"/>
+         <enumeration value="Zamárdi"/>
+         <enumeration value="Zámoly"/>
+         <enumeration value="Zánka"/>
+         <enumeration value="Zaránk"/>
+         <enumeration value="Závod"/>
+         <enumeration value="Zebecke"/>
+         <enumeration value="Zebegény"/>
+         <enumeration value="Zemplénagárd"/>
+         <enumeration value="Zengővárkony"/>
+         <enumeration value="Zichyújfalu"/>
+         <enumeration value="Zics"/>
+         <enumeration value="Ziliz"/>
+         <enumeration value="Zimány"/>
+         <enumeration value="Zirc"/>
+         <enumeration value="Zók"/>
+         <enumeration value="Zomba"/>
+         <enumeration value="Zubogy"/>
+         <enumeration value="Zsadány"/>
+         <enumeration value="Zsáka"/>
+         <enumeration value="Zsámbék"/>
+         <enumeration value="Zsámbok"/>
+         <enumeration value="Zsana"/>
+         <enumeration value="Zsarolyán"/>
+         <enumeration value="Zsebeháza"/>
+         <enumeration value="Zsédeny"/>
+         <enumeration value="Zselickisfalud"/>
+         <enumeration value="Zselickislak"/>
+         <enumeration value="Zselicszentpál"/>
+         <enumeration value="Zsennye"/>
+         <enumeration value="Zsira"/>
+         <enumeration value="Zsombó"/>
+         <enumeration value="Zsujta"/>
+         <enumeration value="Zsurk"/>
+      </restriction>
+   </simpleType>
+   <complexType name="Form_TMUNK_Type">
+      <annotation>
+         <documentation>A teljes nyomtatvány TMUNK részbiztonylatának szerkezetét leíró típus.</documentation>
+      </annotation>
+      <sequence>
+         <element name="Block_120023"
+                  type="tns:Block_TMUNK_120023_Type"
+                  minOccurs="0"
+                  meta:metaType="BlockMetaType">
+            <annotation>
+               <documentation>AZONOSÍTÓ ADATOK</documentation>
+            </annotation>
+         </element>
+         <element name="Block_120025"
+                  type="tns:Block_TMUNK_120025_Type"
+                  minOccurs="0"
+                  meta:metaType="BlockMetaType">
+            <annotation>
+               <documentation>Bejelentés típusa</documentation>
+            </annotation>
+         </element>
+         <element name="Block_120001"
+                  type="tns:Block_TMUNK_120001_Type"
+                  minOccurs="0"
+                  meta:metaType="BlockMetaType">
+            <annotation>
+               <documentation>Adóazonosító jellel rendelkező foglalkoztatott bejelentése</documentation>
+            </annotation>
+         </element>
+         <element name="Block_120003"
+                  type="tns:Block_TMUNK_120003_Type"
+                  minOccurs="0"
+                  meta:metaType="BlockMetaType">
+            <annotation>
+               <documentation>Természetes személyazonosító adatokkal rendelkező foglalkoztatott bejelentése</documentation>
+            </annotation>
+         </element>
+         <element name="Attachment_1"
+                  type="common:AttachmentType"
+                  minOccurs="0"
+                  maxOccurs="unbounded"
+                  meta:metaType="AttachmentMetaType">
+            <annotation>
+               <documentation>Csatolmány; File Extensions:*</documentation>
+            </annotation>
+         </element>
+      </sequence>
+   </complexType>
+   <complexType name="Block_TMUNK_120023_Type">
+      <annotation>
+         <documentation>AZONOSÍTÓ ADATOK</documentation>
+      </annotation>
+      <all>
+         <element name="FieldGroup_120024"
+                  type="tns:FieldGroup_TMUNK_120024_Type"
+                  minOccurs="0"
+                  meta:metaType="FieldGroupMetaType">
+            <annotation>
+               <documentation>Azonosító adatok</documentation>
+            </annotation>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="Block_TMUNK_120025_Type">
+      <annotation>
+         <documentation>Bejelentés típusa</documentation>
+      </annotation>
+      <all>
+         <element name="FieldGroup_120026"
+                  type="tns:FieldGroup_TMUNK_120026_Type"
+                  minOccurs="0"
+                  meta:metaType="FieldGroupMetaType">
+            <annotation>
+               <documentation>Bejelentés típusa</documentation>
+            </annotation>
+         </element>
+         <element name="FieldGroup_120044"
+                  type="tns:FieldGroup_TMUNK_120044_Type"
+                  minOccurs="0"
+                  meta:metaType="FieldGroupMetaType">
+            <annotation>
+               <documentation>Hibás bejelentés iktatószáma</documentation>
+            </annotation>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="Block_TMUNK_120001_Type">
+      <annotation>
+         <documentation>Adóazonosító jellel rendelkező foglalkoztatott bejelentése</documentation>
+      </annotation>
+      <all>
+         <element name="Chain_120033"
+                  type="tns:Chain_TMUNK_120033_Type"
+                  minOccurs="0"
+                  meta:metaType="ChainMetaType">
+            <annotation>
+               <documentation>Kölcsönbeadó adatai</documentation>
+            </annotation>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="Block_TMUNK_120003_Type">
+      <annotation>
+         <documentation>Természetes személyazonosító adatokkal rendelkező foglalkoztatott bejelentése</documentation>
+      </annotation>
+      <all>
+         <element name="Chain_120014"
+                  type="tns:Chain_TMUNK_120014_Type"
+                  minOccurs="0"
+                  meta:metaType="ChainMetaType">
+            <annotation>
+               <documentation>Kölcsönbeadó adatai</documentation>
+            </annotation>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="Chain_TMUNK_120033_Type">
+      <annotation>
+         <documentation>Kölcsönbeadó adatai</documentation>
+      </annotation>
+      <sequence>
+         <element name="Chain_elem" minOccurs="0" maxOccurs="999">
+            <annotation>
+               <documentation>Lánc ismétlődő elemei</documentation>
+            </annotation>
+            <complexType>
+               <sequence>
+                  <element name="FieldGroup_120035"
+                           type="tns:FieldGroup_TMUNK_120035_Type"
+                           minOccurs="1"
+                           meta:metaType="FieldGroupMetaType">
+                     <annotation>
+                        <documentation>Kölcsönbeadó adatai</documentation>
+                     </annotation>
+                  </element>
+                  <element name="Chain_120037"
+                           type="tns:Chain_TMUNK_120037_Type"
+                           minOccurs="0"
+                           meta:metaType="ChainMetaType">
+                     <annotation>
+                        <documentation>Munkaerőkölcsönzéssel érintett foglalkoztatottak adatai</documentation>
+                     </annotation>
+                  </element>
+               </sequence>
+            </complexType>
+         </element>
+      </sequence>
+      <attribute name="sdgID" use="required" fixed="120030"/>
+   </complexType>
+   <complexType name="Chain_TMUNK_120037_Type">
+      <annotation>
+         <documentation>Munkaerőkölcsönzéssel érintett foglalkoztatottak adatai</documentation>
+      </annotation>
+      <sequence>
+         <element name="Chain_elem" minOccurs="0" maxOccurs="19980">
+            <annotation>
+               <documentation>Lánc ismétlődő elemei</documentation>
+            </annotation>
+            <complexType>
+               <sequence>
+                  <element name="FieldGroup_120039"
+                           type="tns:FieldGroup_TMUNK_120039_Type"
+                           minOccurs="1"
+                           meta:metaType="FieldGroupMetaType">
+                     <annotation>
+                        <documentation>Munkaerőkölcsönzéssel érintett foglalkoztatottak adatai</documentation>
+                     </annotation>
+                  </element>
+               </sequence>
+            </complexType>
+         </element>
+      </sequence>
+   </complexType>
+   <complexType name="Chain_TMUNK_120014_Type">
+      <annotation>
+         <documentation>Kölcsönbeadó adatai</documentation>
+      </annotation>
+      <sequence>
+         <element name="Chain_elem" minOccurs="0" maxOccurs="999">
+            <annotation>
+               <documentation>Lánc ismétlődő elemei</documentation>
+            </annotation>
+            <complexType>
+               <sequence>
+                  <element name="FieldGroup_120006"
+                           type="tns:FieldGroup_TMUNK_120006_Type"
+                           minOccurs="1"
+                           meta:metaType="FieldGroupMetaType">
+                     <annotation>
+                        <documentation>Kölcsönbeadó adatai</documentation>
+                     </annotation>
+                  </element>
+                  <element name="Chain_120016"
+                           type="tns:Chain_TMUNK_120016_Type"
+                           minOccurs="0"
+                           meta:metaType="ChainMetaType">
+                     <annotation>
+                        <documentation>Munkaerőkölcsönzéssel érintett foglalkoztatottak adatai</documentation>
+                     </annotation>
+                  </element>
+               </sequence>
+            </complexType>
+         </element>
+      </sequence>
+      <attribute name="sdgID" use="required" fixed="120013"/>
+   </complexType>
+   <complexType name="Chain_TMUNK_120016_Type">
+      <annotation>
+         <documentation>Munkaerőkölcsönzéssel érintett foglalkoztatottak adatai</documentation>
+      </annotation>
+      <sequence>
+         <element name="Chain_elem" minOccurs="0" maxOccurs="999">
+            <annotation>
+               <documentation>Lánc ismétlődő elemei</documentation>
+            </annotation>
+            <complexType>
+               <sequence>
+                  <element name="FieldGroup_120018"
+                           type="tns:FieldGroup_TMUNK_120018_Type"
+                           minOccurs="1"
+                           meta:metaType="FieldGroupMetaType">
+                     <annotation>
+                        <documentation>Munkaerőkölcsönzéssel érintett foglalkoztatottak adatai</documentation>
+                     </annotation>
+                  </element>
+               </sequence>
+            </complexType>
+         </element>
+      </sequence>
+   </complexType>
+   <complexType name="FieldGroup_TMUNK_120024_Type">
+      <annotation>
+         <documentation>Azonosító adatok</documentation>
+      </annotation>
+      <all>
+         <element name="Field_0A0001E001A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Kölcsönbe vevő neve, elnevezése (adózó_neve)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="500"/>
+                  <pattern value="\P{C}+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0A0001E002A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Adószáma (adózó_adószáma)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="11"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="FieldGroup_TMUNK_120026_Type">
+      <annotation>
+         <documentation>Bejelentés típusa</documentation>
+      </annotation>
+      <all>
+         <element name="Field_0A0001E007A"
+                  minOccurs="0"
+                  type="tns:Enum_TMUNK_0A0001E007A"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Bejelentés típusa (Bejelentés_típus)</documentation>
+            </annotation>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="FieldGroup_TMUNK_120044_Type">
+      <annotation>
+         <documentation>Hibás bejelentés iktatószáma</documentation>
+      </annotation>
+      <all>
+         <element name="Field_0A0001E003A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Nyilvántartási szám (nyilvántartási_szám)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="10"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="FieldGroup_TMUNK_120035_Type">
+      <annotation>
+         <documentation>Kölcsönbeadó adatai</documentation>
+      </annotation>
+      <all>
+         <element name="Field_0BXXXXC001A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Kölcsönbeadó elnevezése (45_kölcsönbeadó_neve)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="500"/>
+                  <pattern value="\P{C}+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0BXXXXC002A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Adószáma (45_kölcsönbeadó_adószáma)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="11"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="FieldGroup_TMUNK_120039_Type">
+      <annotation>
+         <documentation>Munkaerőkölcsönzéssel érintett foglalkoztatottak adatai</documentation>
+      </annotation>
+      <all>
+         <element name="Field_0BXXXXC0001AA"
+                  minOccurs="0"
+                  type="tns:Enum_TMUNK_0BXXXXC0001AA"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Bejelentés jellege ([45]A1)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0BXXXXC0001BA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Foglalkoztatott neve ([45]B1)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="200"/>
+                  <pattern value="\P{C}+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0BXXXXC0001CA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Adóazonosító jele ([45]C1)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="10"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0BXXXXC0001DA"
+                  minOccurs="0"
+                  type="xs:date"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Foglalkoztatás kezdete ([45]D1)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0BXXXXC0001EA"
+                  minOccurs="0"
+                  type="xs:date"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Foglalkoztatás vége ([45]E1)</documentation>
+            </annotation>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="FieldGroup_TMUNK_120006_Type">
+      <annotation>
+         <documentation>Kölcsönbeadó adatai</documentation>
+      </annotation>
+      <all>
+         <element name="Field_0CXXXXC001A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Kölcsönbeadó elnevezése (46_kölcsönbeadó_neve)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="500"/>
+                  <pattern value="\P{C}+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0CXXXXC002A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Adószáma (46_kölcsönbeadó_adószáma)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="11"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="FieldGroup_TMUNK_120018_Type">
+      <annotation>
+         <documentation>Munkaerőkölcsönzéssel érintett foglalkoztatottak adatai</documentation>
+      </annotation>
+      <all>
+         <element name="Field_0CXXXXC003A"
+                  minOccurs="0"
+                  type="tns:Enum_TMUNK_0CXXXXC003A"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Bejelentés jellege (46_Bejelentés_jellege)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0CXXXXC004A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Külföldi foglalkoztatott neve (Külf_fogl_név)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="250"/>
+                  <pattern value="\P{C}+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0CXXXXC005A"
+                  minOccurs="0"
+                  type="xs:boolean"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Bejelentés idopontjában a külföldi foglalkoztatott adóazonosító jelét nem ismerem / adóazonosító jelének igénylése folyamatban van. (Külf_adóazon_nincs)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0CXXXXC006A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Születési neve (Külf_fogl_szül_név)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="250"/>
+                  <pattern value="[^0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0CXXXXC007A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Anyja neve (Külf_fogl_anyja_neve)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="250"/>
+                  <pattern value="[^0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0CXXXXC009A"
+                  minOccurs="0"
+                  type="xs:date"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Születési ideje (Külf_fogl_szül_ideje)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0CXXXXC008A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Születési helye (Külf_fogl_szül_helye)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="200"/>
+                  <pattern value="[^0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0CXXXXC010A"
+                  minOccurs="0"
+                  type="tns:Enum_TMUNK_egyseges_orszagkodok_monelkul_1"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Állampolgársága (Külf_fogl_állampolg)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0CXXXXC011A"
+                  minOccurs="0"
+                  type="enm1:altalanos_iranyitoszam_2"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Címe ¦ Irányítószám (Irsz)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0CXXXXC012A"
+                  minOccurs="0"
+                  type="enm1:altalanos_iranyitoszam_1"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Címe ¦ Település (Település)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0CXXXXC013A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Címe ¦ Közterület neve (Közternév)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="40"/>
+                  <pattern value="\P{C}+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0CXXXXC014A"
+                  minOccurs="0"
+                  type="tns:Enum_TMUNK_egyseges_kozterulet_jelleg_levelezes_1"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Címe ¦ Közterület jellege (Közterjelleg)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0CXXXXC015A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Címe ¦ Házszám (Hsz)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="10"/>
+                  <pattern value="\P{C}+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0CXXXXC016A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Címe ¦ Épület (Épület)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="6"/>
+                  <pattern value="\P{C}+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0CXXXXC017A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Címe ¦ Lépcsőház (Lépcsőház)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="6"/>
+                  <pattern value="\P{C}+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0CXXXXC018A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Címe ¦ Emelet (Emelet)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="6"/>
+                  <pattern value="\P{C}+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0CXXXXC019A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Címe ¦ Ajtó (Ajtó)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="6"/>
+                  <pattern value="\P{C}+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0CXXXXC020A"
+                  minOccurs="0"
+                  type="xs:date"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Foglalkoztatás kezdete (46_Fogl_kezdete)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0CXXXXC021A"
+                  minOccurs="0"
+                  type="xs:date"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Foglalkoztatás vége (46_Fogl_vége)</documentation>
+            </annotation>
+         </element>
+      </all>
+   </complexType>
+</schema>
